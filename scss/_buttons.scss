@@ -1,0 +1,13 @@
+.btn {
+  transition: ease-out 380ms
+}
+
+.btn-light {
+  color: #fff;
+  border: 2px solid #fff
+}
+
+.btn-light:hover {
+  color: #2f85eb;
+  background-color: #fff
+}

@@ -1,0 +1,42 @@
+.promo-offer-card-container {
+  width: 210px;
+}
+
+.promo-offer-card {
+  width: 210px;
+  padding-bottom: 10px;
+}
+
+.promo-offer-image-container {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.promo-offer-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.promo-offer-content {
+  margin: 15px 15px 0;
+}
+
+.promo-offer-headline {
+  height: 31px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.promo-offer-button-container {
+  height: 34px;
+  margin-top: 10px;
+}
+
+.flex-child-left-margin-15>div {
+  margin-left: 15px;
+}
+
+.flex-child-left-margin-15>div:first-child {
+  margin-left: 0;
+}

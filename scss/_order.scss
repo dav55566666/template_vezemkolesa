@@ -1,0 +1,266 @@
+@import "vars";
+
+.order__cart__total__cost {
+
+  padding: 15px 0;
+  font-family: $font-open-sans-norm;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: right;
+
+  &-value {
+    color: $color-accent;
+  }
+}
+
+.order__forms {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    @media screen and (max-width: $md2 - 1 + px) {
+      display: block;
+      float: left;
+      width: 100%;
+    }
+  }
+
+  &__panel {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    padding: 20px;
+    border: 1px solid $cIron;
+
+    @media screen and (min-width: $md2 + px ) {
+      width: 31.5%;
+      height: 600px;
+    }
+
+  }
+
+  &__panel__headline {
+
+    width: 100%;
+    margin-bottom: 30px;
+
+    &-number {
+      display: inline-block;
+      margin-right: 15px;
+      width: 1.35em;
+      font-family: $font-fira-sans;
+      font-size: 28px;
+      text-align: center;
+      line-height: 1.35em;
+      border-radius: 3px;
+      font-weight: 500;
+      color: $cWhite;
+      background-color: $color-accent;
+    }
+
+    &-caption {
+      display: inline;
+      width: 1.35em;
+      font-family: $font-open-sans;
+      font-size: 28px;
+      text-align: center;
+      line-height: 1.35em;
+      font-weight: 700;
+    }
+  }
+
+  &__account {
+    &__init-button {
+
+      display: inline-block;
+      width: 100%;
+      padding-top: 1.15em;
+      padding-bottom: 1.15em;
+      font-size: 16px;
+      line-height: 1em;
+      color: $cWhite;
+      font-family: $font-fira-sans;
+      text-transform: uppercase;
+      background-color: $color-accent;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &-container {
+        width: 100%;
+        overflow-x: auto;
+      }
+    }
+
+    &__hint {
+      margin: 7px 0;
+      font-size: 13px;
+      line-height: 1.15em;
+      color: $cIron;
+    }
+  }
+
+  &__receiver__form {
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+
+  &__delivery__form {
+
+    &__delivery-type {
+      &-container {
+        padding: 10px;
+        background-color: $cAlabaster;
+      }
+
+      &-hint {
+        font-size: 15px;
+        line-height: 1.35em;
+        color: $cRollingStone;
+      }
+
+      &-description {
+        &-icon {
+          display: inline-block;
+          margin-right: 4px;
+          width: 48px;
+          height: 48px;
+        }
+
+        &-text {
+          display: inline;
+          font-size: 16px;
+          line-height: 1em;
+        }
+
+        &-cost {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__delivery-controls-group {
+      margin-top: 15px;
+    }
+  }
+
+}
+
+.order__result {
+
+  margin-top: 40px;
+
+  &__delivery {
+
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-roboto;
+    font-size: 16px;
+    line-height: 1.1em;
+
+    &__label {
+      font-family: $font-roboto;
+      font-size: 16px;
+      line-height: 1.1em;
+    }
+
+    &__caption {
+      font-weight: 700;
+    }
+  }
+
+  &__total {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+    font-family: $font-roboto;
+    font-size: 19px;
+    line-height: 1.3em;
+
+    font-weight: 700;
+
+    &__caption {
+      color: $color-accent;
+    }
+  }
+}
+
+.order__total__horizontal__line {
+  margin: 10px 0;
+}
+
+.order__process__personal__data__checkbox {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: $cAlabaster;
+}
+
+.order {
+  &__submit {
+    &__container {
+      margin: 20px 0;
+
+      @media screen and (min-width: $md2 + px ) {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+    }
+
+    &__button {
+      width: 100%;
+
+      @media screen and (min-width: $md2 + px ) {
+        width: 31.5%;
+      }
+
+    }
+  }
+
+  &-cart-container {
+    display: block;
+
+    @media screen and (min-width: $md2 + px ) {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+    }
+  }
+
+  &__promo {
+    &__container {
+      @media screen and (min-width: $md2 + px ) {
+        width: 400px;
+      }
+    }
+
+    &__headline {
+      margin-bottom: 25px;
+      font-family: $font-fira-sans;
+      font-size: 29px;
+      //font-weight: 600;
+      line-height: 1.1em;
+    }
+  }
+
+}
+
+.cart {
+  &__total__horizontal__line {
+    margin: 30px 0 0;
+  }
+
+  &__content {
+
+
+    @media screen and (min-width: $md2 + px ) {
+      display: block;
+      margin-right: 40px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "vars";
+
+.promo {
+
+  &__offer {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &-list {
+
+      display: block;
+
+      @media screen and (min-width: $md4 + px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @media screen and (min-width: $md2 + px) {
+        display: block;
+      }
+    }
+
+    &-icon {
+      width: 54px;
+      height: 54px;
+    }
+
+    &-label {
+      margin-left: 10px;
+      font-family: $font-roboto-condensed;
+      line-height: 1.08em;
+      font-size: 18px;
+      //font-weight: 600;
+    }
+
+  }
+}

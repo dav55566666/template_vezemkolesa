@@ -1,0 +1,555 @@
+@import 'vars';
+
+.tirefit {
+    background: #fff;
+}
+
+.quick-order {
+    padding-bottom: 45px;
+
+    &__header {
+        display: flex;
+        margin: 15px 0;
+    }
+
+    &__header-icon {
+        margin-right: 15px;
+    }
+
+    &__header-text {
+        font-weight: bold;
+        font-size: 25px;
+        font-family: $font-open-sans;
+    }
+
+    &__sub-header {
+        font-size: 15px;
+        font-family: $font-roboto;
+        line-height: 17px;
+    }
+
+    &__form {
+        margin-top: 10px;
+    }
+
+    &__input {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    &__submit {
+        margin-top: 25px;
+    }
+}
+
+.tirefit-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+
+    @media screen and (max-width: $md3 - 1 + px) {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    &__benefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    &__registration {
+        height: 100%;
+    }
+}
+.tirefit-benefit {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #d8dcde;
+    border-radius: 4px;
+
+    @media screen and (max-width: $md4 - 1 + px) {
+        flex-direction: column;
+    }
+
+    &__img {
+        @media screen and (min-width: $md4 + px) {
+            margin-right: 10px;
+        }
+        @media screen and (max-width: $md4 - 1 + px) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__name {
+        color: $color-accent;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: $font-open-sans;
+        text-transform: uppercase;
+        @media screen and (max-width: $md4 - 1 + px) {
+            text-align: center;
+        }
+    }
+}
+.tirefit-registration {
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow: hidden;
+        border-radius: inherit;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: $md2 - 1 + px) and (min-width: $md3 + px) {
+            display: none;
+        }
+        @media screen and (max-width: $md4 - 1 + px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__header {
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 28px;
+        font-family: $font-open-sans;
+    }
+
+    &__form {
+        @media screen and (min-width: $md2 + px) {
+            max-width: 200px;
+        }
+        @media screen and (max-width: $md3 - 1 + px) and (min-width: $md4 + px) {
+            max-width: 320px;
+        }
+    }
+
+    &__select {
+        display: block;
+        width: 100%;
+
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+    &__submit {
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+#tirefit-price {
+    .nav-tabs > li::before {
+        display: none;
+    }
+
+    .tab-pane {
+        padding: 0;
+        background: transparent;
+    }
+
+    .responsive-tabs.nav-tabs {
+        @media screen and (max-width: $md3 + px) {
+            position: relative;
+            z-index: 10;
+            overflow: visible;
+            border-bottom: none;
+        }
+
+        span.glyphicon {
+            @media screen and (max-width: $md3 + px) {
+                position: absolute;
+                top: 50%;
+                right: 22px;
+                color: $color-accent;
+                transform: translate3d(0, -50%, 0);
+                &.glyphicon-chevron-up {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: $md3 + 1 + px) {
+                display: none;
+            }
+        }
+
+        > li {
+            @media screen and (max-width: $md3 + px) {
+                display: none;
+                float: none;
+                text-align: center;
+
+                &:last-of-type > a {
+                    margin-right: 0;
+                }
+            }
+
+            > a {
+                @media screen and (max-width: $md3 + px) {
+                    margin-right: 0;
+                    padding-right: 55px;
+                    text-align: left;
+                }
+            }
+
+            &.active {
+                @media screen and (max-width: $md3 + px) {
+                    display: block;
+                }
+                a {
+                    @media screen and (max-width: $md3 + px) {
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+
+        &.open {
+            span.glyphicon {
+                &.glyphicon-chevron-up {
+                    @media screen and (max-width: $md3 + px) {
+                        // display: block;
+                    }
+                }
+                &.glyphicon-chevron-down {
+                    @media screen and (max-width: $md3 + px) {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            > li {
+                @media screen and (max-width: $md3 + px) {
+                    display: block;
+
+                    a {
+                        border-radius: 0;
+                    }
+
+                    &:first-of-type a {
+                        border-radius: 5px 5px 0 0;
+                    }
+                    &:last-of-type a {
+                        border-radius: 0 0 5px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-tabs {
+        border: 0;
+
+        @media screen and (max-width: $md3 + px) {
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+        }
+
+        &__item {
+            a {
+                position: relative;
+                padding: 20px 15px 20px 40px;
+                color: $color-main;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $font-open-sans;
+                line-height: 120%;
+                text-transform: uppercase;
+                background: transparent;
+                border: 0;
+                transition: all 0.3s ease;
+
+                @media screen and (max-width: $md2 + px) and (min-width: $md3 + 1 + px) {
+                    padding: 17px 15px 17px 35px;
+                    font-size: 15px;
+                }
+                @media screen and (max-width: $md3 + px) {
+                    padding: 20px 15px;
+                    background: $cWhite;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    display: block;
+                    width: 19px;
+                    height: 19px;
+                    vertical-align: middle;
+                    background: transparent;
+                    border: 3px solid $color-accent;
+                    border-radius: 4px;
+                    transform: translate3d(0, -50%, 0);
+                    opacity: 0.2;
+                    transition: all 0.3s ease;
+                    content: '';
+
+                    @media screen and (max-width: $md2 + px) and (min-width: $md3 + 1 + px) {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 2px;
+                    }
+                    @media screen and (max-width: $md3 + px) {
+                        display: none;
+                    }
+                }
+            }
+
+            &.active a {
+                color: $color-accent;
+                background: $color-gray-back;
+                &::before {
+                    background: $color-accent;
+                    transform: translate3d(0, -50%, 0) scale(0.47);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.tirefit-price {
+    &__tabs {
+    }
+
+    &__tab-content {
+        margin-top: 30px;
+    }
+
+    margin-top: 50px;
+}
+
+.tire-price-table {
+    width: 100%;
+
+    &_desktop &__row {
+        &:not(:first-child) {
+            border-top: 1px solid #99cee9;
+        }
+    }
+
+    &__h,
+    &__cell {
+        padding: 10px;
+        font-size: 15px;
+        font-family: $font-roboto;
+        line-height: 120%;
+        text-align: center;
+        vertical-align: middle;
+
+        &:first-child {
+            text-align: left;
+        }
+    }
+
+    &__h {
+        font-weight: bold;
+        font-family: $font-open-sans;
+    }
+
+    &_desktop &__h {
+        background: $color-gray-back;
+    }
+
+    &_mobile &__h {
+        padding: 20px 10px;
+        font-size: 17px;
+
+        span {
+            color: $color-accent;
+        }
+    }
+
+    &__head,
+    &__head &__h {
+        color: $cWhite;
+        background: $color-accent;
+    }
+
+    &__body {
+    }
+
+    &_desktop &__cell {
+        &_header {
+            max-width: 180px;
+            padding-right: 20px;
+            border-right: 1px solid #99cee9;
+        }
+    }
+
+    &_mobile &__cell:not(th) {
+        color: $color-accent;
+        font-weight: bold;
+    }
+}
+
+.wheel-size-content {
+    &:not(.active) {
+        display: none;
+    }
+}
+
+#tire-price-table_mobile {
+    .responsive-tabs.nav-tabs {
+        @media screen and (max-width: $md3 + px) {
+            position: relative;
+            z-index: 10;
+            height: 40px;
+            overflow: visible;
+            border-bottom: none;
+        }
+
+        span.glyphicon {
+            @media screen and (max-width: $md3 + px) {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                color: $color-accent;
+                transform: translate3d(0, -50%, 0);
+                &.glyphicon-chevron-up {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: $md3 + 1 + px) {
+                display: none;
+            }
+        }
+
+        > li {
+            @media screen and (max-width: $md3 + px) {
+                display: none;
+                float: none;
+                text-align: center;
+
+                &:last-of-type > a {
+                    margin-right: 0;
+                }
+            }
+
+            > a {
+                @media screen and (max-width: $md3 + px) {
+                    margin-right: 0;
+                    padding-right: 30px;
+                    text-align: left;
+                }
+            }
+
+            &.active {
+                @media screen and (max-width: $md3 + px) {
+                    display: block;
+                }
+                a {
+                    @media screen and (max-width: $md3 + px) {
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+
+        &.open {
+            span.glyphicon {
+                &.glyphicon-chevron-up {
+                    @media screen and (max-width: $md3 + px) {
+                        // display: block;
+                    }
+                }
+                &.glyphicon-chevron-down {
+                    @media screen and (max-width: $md3 + px) {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            > li {
+                @media screen and (max-width: $md3 + px) {
+                    display: block;
+
+                    a {
+                        border-radius: 0;
+                    }
+
+                    &:first-of-type a {
+                        border-radius: 5px 5px 0 0;
+                    }
+                    &:last-of-type a {
+                        border-radius: 0 0 5px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .wheel-size-list {
+        border: 0;
+
+        &__item {
+            a {
+                position: relative;
+                min-width: 92px;
+                height: 40px;
+                padding: 8px 10px;
+                color: $color-main;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: $font-open-sans;
+                line-height: 120%;
+                white-space: nowrap;
+                text-transform: uppercase;
+                background: $cWhite;
+                border: 1px solid #dbe2e9;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    display: block;
+                    width: 19px;
+                    height: 19px;
+                    vertical-align: middle;
+                    background: transparent;
+                    border: 3px solid $color-accent;
+                    border-radius: 4px;
+                    transform: translate3d(0, -50%, 0);
+                    opacity: 0.2;
+                    transition: all 0.3s ease;
+                    content: '';
+
+                    @media screen and (max-width: $md2 + px) and (min-width: $md3 + 1 + px) {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 2px;
+                    }
+                    @media screen and (max-width: $md3 + px) {
+                        display: none;
+                    }
+                }
+            }
+
+            &.active a {
+                color: $color-accent;
+                &::before {
+                    background: $color-accent;
+                    transform: translate3d(0, -50%, 0) scale(0.47);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

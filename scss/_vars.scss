@@ -1,0 +1,61 @@
+/* COLORS */
+
+$cBlack: #000;
+$cLimedSpruce: #374046;
+$cTundora: #444;
+$cRollingStone: #7e8589;
+$cRegentGray: #949da7;
+$cIron: #d8dcde;
+$cAlabaster: #f9f9f9;
+$cWhite: #fff;
+
+$cCerulean: #0E8ECF;
+$cDeepLaguna: #166F9C;
+
+$cApple: #37a72e;
+$cCoralRed: #ff4343;
+
+$cPastelGreen: #6ee152;
+$cBroom: #faff1a;
+
+$cTurquoise: #34af9d;
+$cDarkGreen: #2E8C27;
+
+/* COLORS ASSIGMENT */
+
+$color-main: $cTundora;
+$color-accent: $cCerulean;
+$color-accent-active: $cDeepLaguna;
+$color-success: $cApple;
+$color-success-active: $cDarkGreen;
+$color-warn: $cCoralRed;
+$color-gray-back: $cAlabaster;
+$color-white-on-blue: #446E8C;
+$color-mustard: #D6E152;
+
+/* FONTS */
+
+$font-roboto: 'Roboto', sans-serif;
+$font-roboto-condensed: 'Roboto Condensed', sans-serif;
+$font-open-sans: 'Open Sans Condensed', $font-roboto;
+$font-open-sans-condensed: $font-open-sans;
+$font-open-sans-norm: 'Open Sans', $font-roboto;
+$font-fira-sans: 'Fira Sans Condensed', $font-open-sans, sans-serif;
+$font-awesome: 'FontAwesome';
+
+/* BOOTSTRAP MEDIA BREAKPOINTS */
+
+$md0: 1921;
+$md1: 1601;
+$md2: 1025;
+$md3: 768;
+$md4: 480;
+
+/* MIXINS */
+
+@mixin multiLineElipsis($lines) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
