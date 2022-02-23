@@ -1,0 +1,25 @@
+{
+  "name": "vezemkolesa-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexVasechkin/template_vezemkolesa.git"
+  },
+  "author": "Alex Vasechkin <vasechkin.alex.v@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexVasechkin/template_vezemkolesa/issues"
+  },
+  "homepage": "https://github.com/AlexVasechkin/template_vezemkolesa#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0"
+  }
+}
