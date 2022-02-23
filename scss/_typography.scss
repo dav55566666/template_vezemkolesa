@@ -1,0 +1,50 @@
+body, html {
+  font-family: Roboto, sans-serif
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.headline,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400
+}
+
+h1,
+.h1,
+.landing-headline-h1 {
+  font-size: 32px;
+  line-height: 1.2em;
+}
+
+h2,
+.h2,
+.landing-headline-h2 {
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+p,
+.p,
+li {
+  font-size: 16px;
+  line-height: 20px;
+  color: #424242;
+}
+
+.landing-headline-h2 {
+  font-size: 32px;
+}
+
+.b {
+  font-weight: 700
+}

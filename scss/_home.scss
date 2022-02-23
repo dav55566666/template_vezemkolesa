@@ -1,0 +1,56 @@
+.main-product-card-image {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.main-product-card-content {
+  padding: 10px 15px 0;
+}
+
+.main-product-card-headline {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.main-product-card-description {
+
+}
+
+.main-product-card-link-container {
+  padding-top: 5px;
+}
+
+.main-product-card-link {
+  text-transform: uppercase;
+}
+
+.material-button {
+  margin: 6px 0;
+  padding: 1.3em 1.9em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.0em;
+  border-radius: .5rem;
+  transition: 380ms ease-in;
+  color: #a7acb5;
+}
+
+.material-button:hover {
+  color: #717b8c;
+}
+
+.material-button.active {
+  color: #444;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.material-button-fixed {
+  width: 14em;
+}
+
+.flex-button-set>div {
+  margin-right: 10px;
+}

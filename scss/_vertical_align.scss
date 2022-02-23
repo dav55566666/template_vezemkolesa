@@ -1,0 +1,28 @@
+.v-align {
+  display: table;
+  width: 100%;
+  height: 100%
+}
+
+.v-align > div {
+  display: table-cell
+}
+
+.v-align-mid {
+  vertical-align: middle
+}
+
+.v-align-top {
+  vertical-align: top
+}
+
+.v-align-bottom {
+  vertical-align: bottom
+}
+
+.h-half {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  border-width: 0
+}

@@ -1,0 +1,119 @@
+#filter-container {
+  position: relative;
+}
+
+.catalog-filter-redirect-trigger {
+  display: none;
+  position: absolute;
+}
+
+.trigger-visible {
+  display: block!important;
+  z-index: 100000;
+  margin-left: -45%;
+
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.trigger-visible:after {
+  display: block!important;
+
+  border-left-color: rgba(0,0,0,0.8);
+  border-style: solid;
+  border-width: 6px 0 6px 7px;
+  color: transparent;
+  content: '';
+  height: 0;
+  margin-top: -6px;
+  position: absolute;
+  right: -7px;
+  top: 50%;
+  width: 0;
+}
+
+.catalog-filter-redirect-trigger-link,
+.catalog-filter-redirect-trigger-link-mobile {
+  text-decoration: none!important;
+  color: #ffff!important;
+}
+
+.substrate {
+  background-color: #fff;
+}
+
+#filter {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  #filter {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 15px 10px 10px 15px;
+    position: fixed;
+    left: 0;
+    top: 1000px;
+    background-color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 300;
+    overflow-y: scroll;
+  }
+
+  #desktop-filters-container {
+    margin-bottom: 100px!important;
+  }
+}
+
+.filter-show {
+  animation: filter 2s ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes filter {
+  0% {
+    top: 1000px;
+  }
+  15% {
+    top: 0;
+  }
+  85% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.catalog-trigger-container {
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+  box-shadow: 0 2px 7px 0 #999;
+  z-index: 400;
+}
+
+.catalog-pagination-container {
+  overflow-x: auto;
+  padding: 0 15px 10px 15px;
+}
+
+.catalog-pagination-button-set {
+  min-width: 535px;
+}
+
+.catalog {
+
+  &__grid {
+
+    &__product-caption {
+      height: 3.5em;
+    }
+
+  }
+
+}

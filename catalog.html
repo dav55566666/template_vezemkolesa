@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge" >
+  <title>Каталог</title>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+        href="site/assets/template_vlad/css/style.css"
+        type="text/css" >
+<!--  <link rel="stylesheet"-->
+<!--        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #fff;">
+
+  <div>
+    <select class="catalog__filter__select">
+      <option value="">160</option>
+      <option value="">165</option>
+      <option value="">180</option>
+      <option value="">215</option>
+      <option value="">220</option>
+      <option value="">235</option>
+    </select>
+  </div>
+
+  <div class="switcher">
+    <input type="checkbox" checked />
+    <div class="switcher__indicator__container">
+      <i class="switcher__indicator"></i>
+    </div>
+    <div class="switcher__label">Тестовый текст</div>
+  </div>
+
+  <script src="site/assets/js/custom/common/tabs/index.js"></script>
+
+  <div class="catalog__content__container">
+    <div class="catalog__container">
+      <div class="catalog">
+        <section class="catalog__filter">
+
+          <div class="catalog__filter__category__nav__container">
+            <div class="catalog__filter__category__nav__set">
+              <div class="catalog__filter__category__nav__item__container">
+                <a class="catalog__filter__category__nav__item catalog__filter__category__nav__item-active"
+                   href="#all">показать все</a>
+              </div>
+
+              <div class="catalog__filter__category__nav__item__container">
+                <a class="catalog__filter__category__nav__item"
+                   href="#">легковые авто</a>
+              </div>
+
+              <div class="catalog__filter__category__nav__item__container">
+                <a class="catalog__filter__category__nav__item"
+                   href="" >внедорожные авто</a>
+              </div>
+
+              <div class="catalog__filter__category__nav__item__container">
+                <div class="catalog__filter__category__nav__item"
+                     href="" >коммерческие</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="tab__container product__card__tabs">
+            <div class="tab__nav">
+              <div class="tab__nav__item">
+                <span class="tab__nav__item__trigger tab__nav__item__trigger-active">Характеристики</span>
+              </div>
+
+              <div class="tab__nav__item">
+                <span class="tab__nav__item__trigger">Описание</span>
+              </div>
+
+              <div class="tab__nav__item">
+                <span class="tab__nav__item__trigger">Доставка</span>
+              </div>
+
+              <div class="tab__nav__item">
+                <span class="tab__nav__item__trigger">Варианты оплаты</span>
+              </div>
+
+              <div class="tab__nav__item">
+                <span class="tab__nav__item__trigger">Отзывы</span>
+              </div>
+
+            </div>
+
+            <div class="tab__content">
+              <div class="tab__content__item">
+                <h2>Характеристики</h2>
+              </div>
+
+              <div class="tab__content__item">
+                <h2>Описание</h2>
+              </div>
+
+              <div class="tab__content__item">
+                <h2>Доставка</h2>
+              </div>
+
+              <div class="tab__content__item">
+                <h2>Варианты оплаты</h2>
+              </div>
+
+              <div class="tab__content__item">
+                <h2>Отзывы</h2>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab__container catalog__filter__tabs">
+            <div class="tab__nav">
+              <div class="tab__nav__item">
+                <span class="tab__nav__item__trigger tab__nav__item__trigger-active">шины по типоразмерам</span>
+              </div>
+
+              <div class="tab__nav__item">
+                <span class="tab__nav__item__trigger">шини по автомобилю</span>
+              </div>
+
+            </div>
+
+            <div class="tab__content">
+              <div class="tab__content__item">
+                <div class="catalog__filter__control__set__container">
+                  <div>
+                    <div style="width: 100%; overflow: auto;">
+                      <div class="catalog__filter__control__set">
+                        <div class="catalog__filter__control__set__item">
+                          <select class="catalog__filter__select">
+                            <option value="">Ширина</option>
+                            <option value="">160</option>
+                            <option value="">165</option>
+                            <option value="">180</option>
+                            <option value="">215</option>
+                            <option value="">220</option>
+                            <option value="">235</option>
+                          </select>
+                        </div>
+
+                        <div class="catalog__filter__control__set__item">
+                          <select class="catalog__filter__select">
+                            <option value="">Высота</option>
+                            <option value="">55</option>
+                            <option value="">60</option>
+                            <option value="">65</option>
+                            <option value="">80</option>
+                          </select>
+                        </div>
+
+                        <div class="catalog__filter__control__set__item">
+                          <select class="catalog__filter__select">
+                            <option value="">Диаметр шины</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                          </select>
+                        </div>
+
+                        <div class="catalog__filter__control__set__item">
+                          <select class="catalog__filter__select">
+                            <option value="">Сезон</option>
+                            <option value="">Лето</option>
+                            <option value="">Зима</option>
+                          </select>
+                        </div>
+
+                        <div class="catalog__filter__control__set__item">
+                          <select class="catalog__filter__select">
+                            <option value="">Производитель</option>
+                            <option value="">Nokian</option>
+                            <option value="">Pirelli</option>
+                          </select>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="catalog__filter__control__set">
+                        <div class="catalog__filter__control__set__item">
+                          <div class="switcher">
+                            <input type="checkbox" checked />
+                            <div class="switcher__indicator__container">
+                              <i class="switcher__indicator"></i>
+                            </div>
+                            <div class="switcher__label">XL</div>
+                          </div>
+                        </div>
+
+                        <div class="catalog__filter__control__set__item">
+                          <div class="switcher">
+                            <input type="checkbox" checked />
+                            <div class="switcher__indicator__container">
+                              <i class="switcher__indicator"></i>
+                            </div>
+                            <div class="switcher__label">Run Flat</div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div>
+                    <div class="catalog__filter__control__submit__button__container">
+                      <button class="catalog__filter__control__submit__button data-control-form-submit-button"
+                              type="submit"
+                      >подобрать</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="tab__content__item">
+                <div class="catalog__filter__control__set__container">
+                  <div>
+                    <div class="catalog__filter__control__set">
+                      <div class="catalog__filter__control__set__item">
+                        <select class="catalog__filter__select">
+                          <option value="">Производитель</option>
+                          <option value="">BMW</option>
+                          <option value="">Mercedes</option>
+                          <option value="">Honda</option>
+                        </select>
+                      </div>
+
+                      <div class="catalog__filter__control__set__item">
+                        <select class="catalog__filter__select">
+                          <option value="">Модель</option>
+                          <option value="">1</option>
+                          <option value="" selected>3</option>
+                          <option value="">3 GT</option>
+                          <option value="">5</option>
+                        </select>
+                      </div>
+
+                      <div class="catalog__filter__control__set__item">
+                        <select class="catalog__filter__select">
+                          <option value="">Кузов</option>
+                          <option value="">3 (2011)</option>
+                        </select>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="catalog__filter__control__submit__button__container">
+                      <button class="catalog__filter__control__submit__button"
+                              type="submit"
+                      >подобрать</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <div class="catalog__grid" id="placeholder"></div>
+
+      </div>
+
+    </div>
+
+    <div class="catalog__aside__container">
+      <div class="catalog__aside">
+        <div class="product-sidebar__banner sidebar-banner">
+          <div class="sidebar-banner__image">
+            <picture>
+              <source srcset="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@1x.webp 1x,
+                                          https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@2x.webp 2x"
+                      type="image/webp">
+              <img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@1x.jpg" srcset="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@2x.jpg 2x" alt="счастливый водитель">
+            </picture>
+          </div>
+
+          <div class="sidebar-banner__content">
+            <span class="sidebar-banner__icon"><img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner-icon.svg" alt="стрелка влево" aria-hidden=""></span> <span class="sidebar-banner_size_m">Каждый покупатель<br>получает сертификат на</span> <span class="sidebar-banner_size_xl">Бесплатную</span> <span class="sidebar-banner_size_l">эвакуацию</span>
+          </div>
+
+        </div>
+
+        <div class="product-sidebar__info-block sidebar-info">
+          <div class="sidebar-info__title"><span class="sidebar-info__title-icon"><img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/medal.svg" alt="медаль" aria-hidden=""></span>Гарантия производителя</div>
+          <div class="sidebar-info__text">Расширенная гарантия NOKIAN является дополнением к стандартным гарантийным условиям производителя и распространяется только на эксплуатационные повреждения шин.</div>
+        </div>
+
+        <div class="product-sidebar__info-block sidebar-info">
+          <div class="sidebar-info__title"><span class="sidebar-info__title-icon"><img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/return.svg" alt="возврат" aria-hidden=""></span>Возврат и обмен</div>
+          <div class="sidebar-info__text">Вы можете обменять или вернуть товар который не подошел без дополнительных объяснений в течении 14 дней с момента покупки</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="catalog__grid__item__container">
+    <div class="catalog__grid__item__substrate">
+      <div class="catalog__grid__item__content">
+        <div class="catalog__grid__item__content__row-top">
+          <div class="catalog__grid__item__content__row__column-first">
+            <div class="catalog__grid__item__image__container">
+              <div>
+                <img class="catalog__grid__item__image"
+                     src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/images/products/768/nokian-nordman-rs2-suv-watermark.jpg"
+                     alt="" />
+              </div>
+
+              <div class="catalog__grid__item__image-icon-set">
+                <div class="catalog__grid__item__image-icon picture__icon__show"></div>
+                <div class="catalog__grid__item__image-icon picture__icon__stud"></div>
+              </div>
+
+              <div class="catalog__grid__item__image-sber-icon-container">
+                <div class="catalog__grid__item__image-sber-icon picture__icon__sber__rassrochka"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__grid__item__content__row__column-second">
+            <div class="catalog__grid__item__description__container">
+              <div class="catalog__grid__item__description__row-vendor-logo">
+                <div>
+                  <img class="catalog__grid__item__description__vendor-logo"
+                       src="https://vezemkolesa.ru/site/assets/img/trademark/tire/Nokian_logo.png"
+                       alt="" />
+                </div>
+
+                <div>
+                  <span class="catalog__grid__item__description__vendor-code">арт. T430358</span>
+                </div>
+              </div>
+
+              <div class="catalog__grid__item__description__row-category-name">
+                автомобильная шина
+              </div>
+
+              <div class="catalog__grid__item__description__row-offer-name">
+                Nokian Ecovision VI-386HP
+              </div>
+
+              <div class="catalog__grid__item__description__row-offer-property-set">
+                <span class="catalog__grid__item__description__row-offer-property">386HP</span>
+                <span class="catalog__grid__item__description__row-offer-property">225/55</span>
+                <span class="catalog__grid__item__description__row-offer-property">R16</span>
+                <span class="catalog__grid__item__description__row-offer-property">100</span>
+                <span class="catalog__grid__item__description__row-offer-property">T</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__grid__item__content__row-bottom">
+          <div class="catalog__grid__item__content__row__column-first">
+            <div class="catalog__grid__item__price-container">
+              <div>
+                <div class="catalog__grid__item__price-old">
+                  4200 &#8381;
+                </div>
+
+                <div class="catalog__grid__item__price-actual">
+                  3800 &#8381;
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__grid__item__content__row__column-second">
+            <a class="catalog__grid__item__link"
+               href="#">посмотреть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var item = [
+        '<div class="catalog__grid__item">',
+        '<div class="catalog__grid__item__container">',
+        '  <div class="catalog__grid__item__substrate">',
+        '    <div class="catalog__grid__item__content">',
+        '      <div class="catalog__grid__item__content__row-top">',
+        '        <div class="catalog__grid__item__content__row__column-first">',
+        '          <div class="catalog__grid__item__image__container">',
+        '            <div>',
+        '              <img class="catalog__grid__item__image"',
+        '                   src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/images/products/768/nokian-nordman-rs2-suv-watermark.jpg"',
+        '                   alt="" />',
+        '            </div>',
+        '',
+        '            <div class="catalog__grid__item__image-icon-set">',
+        '              <div class="catalog__grid__item__image-icon picture__icon__show"></div>',
+        '              <div class="catalog__grid__item__image-icon picture__icon__stud"></div>',
+        '            </div>',
+        '',
+        '            <div class="catalog__grid__item__image-sber-icon-container">',
+        '              <div class="catalog__grid__item__image-sber-icon picture__icon__sber__rassrochka"></div>',
+        '            </div>',
+        '          </div>',
+        '        </div>',
+        '',
+        '        <div class="catalog__grid__item__content__row__column-second">',
+        '          <div class="catalog__grid__item__description__container">',
+        '            <div class="catalog__grid__item__description__row-vendor-logo">',
+        '              <div>',
+        '                <img class="catalog__grid__item__description__vendor-logo"',
+        '                     src="https://vezemkolesa.ru/site/assets/img/trademark/tire/Nokian_logo.png"',
+        '                     alt="" />',
+        '              </div>',
+        '',
+        '              <div>',
+        '                <span class="catalog__grid__item__description__vendor-code">арт. T430358</span>',
+        '              </div>',
+        '            </div>',
+        '',
+        '            <div class="catalog__grid__item__description__row-category-name">',
+        '              автомобильная шина',
+        '            </div>',
+        '',
+        '            <div class="catalog__grid__item__description__row-offer-name">',
+        '              Nokian Ecovision VI-386HP Nokian Ecovision VI-386HP',
+        '            </div>',
+        '',
+        '            <div class="catalog__grid__item__description__row-offer-property-set">',
+        '              <span class="catalog__grid__item__description__row-offer-property">386HP</span>',
+        '              <span class="catalog__grid__item__description__row-offer-property">225/55</span>',
+        '              <span class="catalog__grid__item__description__row-offer-property">R16</span>',
+        '              <span class="catalog__grid__item__description__row-offer-property">100</span>',
+        '              <span class="catalog__grid__item__description__row-offer-property">T</span>',
+        '              <span class="catalog__grid__item__description__row-offer-property">R16</span>',
+        '              <span class="catalog__grid__item__description__row-offer-property">100</span>',
+        '              <span class="catalog__grid__item__description__row-offer-property">T</span>',
+        '            </div>',
+        '          </div>',
+        '        </div>',
+        '      </div>',
+        '',
+        '      <div class="catalog__grid__item__content__row-bottom">',
+        '        <div class="catalog__grid__item__content__row__column-first">',
+        '          <div class="catalog__grid__item__price-container">',
+        '            <div>',
+        '              <div class="catalog__grid__item__price-old">',
+        '                4200 &#8381;',
+        '              </div>',
+        '',
+        '              <div class="catalog__grid__item__price-actual">',
+        '                3800 &#8381;',
+        '              </div>',
+        '',
+        '            </div>',
+        '          </div>',
+        '        </div>',
+        '',
+        '        <div class="catalog__grid__item__content__row__column-second">',
+        '          <a class="catalog__grid__item__link"',
+        '             href="#">посмотреть</a>',
+        '        </div>',
+        '      </div>',
+        '    </div>',
+        '  </div>',
+        '</div>',
+      '</div>'
+    ].join('\n');
+
+    var idxs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+    var items = idxs.map(() => {
+      return item;
+    });
+
+    var placeholder = document.getElementById('placeholder');
+    placeholder.innerHTML = items.join(' ');
+
+    const switcherCollection = document.querySelectorAll('.switcher input[type=checkbox]');
+
+    switcherCollection.forEach(item => {
+      item.addEventListener('change', () => {
+        const collection = document.querySelectorAll('.switcher input[type=checkbox]:checked');
+        console.log(collection);
+      });
+    });
+
+  </script>
+
+</body>
+</html>

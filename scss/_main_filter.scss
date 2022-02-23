@@ -1,0 +1,54 @@
+.MainFilter {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+  height: 530px;
+}
+
+.filter-button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.filter-button {
+  padding: 6px 16px;
+
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.active-filter {
+  border-bottom: 3px solid #1861a0;
+}
+
+.mainfilter-content {
+  position: relative;
+}
+
+#mainfilter-overlay {
+  height: 100%;
+  left: 0px;
+  width: 0%;
+  position: absolute;
+  background-color: #ffff;
+  z-index: 1;
+}
+
+#FilterContentContainer {
+  position: relative;
+}
+
+.mainfilter-overlay-show {
+  animation: mainfilter-overlay-show  380ms ease-in-out;
+  animation-fill-mode: none; }
+
+@keyframes mainfilter-overlay-show {
+  0% {
+    width: 0%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 0%; } }

@@ -1,0 +1,101 @@
+.cart-frame-content {
+  @media (max-width: 540px) {
+    max-height: 60vh!important;
+  }
+}
+
+.cart {
+
+  &__product-category {
+    font-family: "Cuprum", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #555;
+  }
+
+  &__product-caption {
+    height: 48px;
+    font-family: Cuprum, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &__product-article {
+    color: #d4d4d4;
+    text-align: left;
+  }
+
+  &__price-hint {
+    color: #d4d4d4;
+  }
+
+  &__price {
+    color: #d4d4d4;
+  }
+
+  &__header {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: #444;
+  }
+}
+
+.cart-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  position: fixed;
+  top: 0;
+  left: 100%;
+
+  background-color: #fff;
+
+  transition: ease-out 600ms;
+
+  z-index: 200;
+}
+
+.cart-frame-animation-in {
+  animation: cart-frame-in 630ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.cart-frame-animation-out {
+  animation: cart-frame-out 630ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cart-frame-in {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes cart-frame-out {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.cart-frame-content {
+  max-height: 75vh;
+  overflow-y: auto;
+}

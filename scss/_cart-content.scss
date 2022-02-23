@@ -1,0 +1,145 @@
+@import "vars";
+
+.cart__item {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $md2 + px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    @media screen and (max-width: $md2 - 1 + px) {
+      display: block;
+      overflow: hidden;
+    }
+
+    &__picture {
+      display: block;
+      float: left;
+      width: 90px;
+
+      @media screen and (min-width: $md3 + px) {
+        width: 180px;
+      }
+    }
+
+    &__text {
+      display: block;
+      float: left;
+      width: 60%;
+
+      @media screen and (min-width: $md2 + px) {
+        width: 340px;
+      }
+
+      &-category {
+        font-family: $font-roboto;
+        color: $cIron;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+
+        @media screen and (max-width: $md4 - 1 + px) {
+          font-size: 12px;
+        }
+      }
+
+    }
+  } /* __info */
+
+  &__actions {
+
+    @media screen and (max-width: $md2 - 1 + px) {
+      display: block;
+      overflow: hidden;
+    }
+
+    &__content {
+      display: block;
+
+      @media screen and (min-width: $md3 + px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+
+      &__vendor-code {
+        display: block;
+        margin-left: 25%;
+        text-align: left;
+
+        @media screen and (min-width: $md4 + px) {
+          margin-left: 0;
+        }
+
+        text-transform: uppercase;
+        font-family: $font-fira-sans;
+        font-size: 22px;
+        font-weight: 500;
+        color: $cTundora;
+        letter-spacing: .7px;
+      }
+
+      &__controls {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 25%;
+        margin-top: 6px;
+
+        @media screen and (min-width: $md3 + px) {
+          justify-content: flex-end;
+          margin: 0;
+        }
+
+        &__col {
+          margin-right: 7px;
+
+          @media screen and (min-width: $md3 + px) {
+            margin-right: 0;
+            margin-left: 20px;
+          }
+
+        }
+
+        &__item-price {
+          font-family: $font-open-sans-norm;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 1.1em;
+          color: $color-accent;
+          text-transform: uppercase;
+        }
+
+      } /* __controls */
+    } /* __content */
+  }  /* __actions */
+}
+
+.cart__item__text {
+
+  &-name {
+    font-family: $font-fira-sans;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: $color-accent;
+    text-transform: uppercase;
+  }
+
+  &-name-vendor {
+    text-transform: capitalize!important;
+  }
+}

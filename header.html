@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet"
+        href="site/assets/template_vlad/css/style.css"
+        type="text/css" >
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__content__container">
+      <div class="header__top__container">
+        <div class="header__top__subcontainer">
+          <div class="header__top__item header__top__item-first">
+            <div>
+              <div>
+                <figure class="header__top__logo">
+                  <img class="top__icon"
+                       src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/img/company-style/logo.svg"
+                       alt="Логотип Везем Колеса">
+                  <figcaption class="top__text">
+                    Везём<br>
+                    Колеса
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div>
+                <div class="header__top__search__by__car__container">
+                  <a href="">
+                    <div class="reactive__container">
+                      <figure class="reactive__content header__top__search__by__car">
+                        <img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/car.svg"
+                             alt="Автомобиль" >
+                        <figcaption>
+                          Выберите<br>Ваш автомобиль
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="header__top__item header__top__item-second">
+            <div class="header__top__search__input__container">
+              <form class="header__top__search__input__form"
+                    action="/search"
+                    method="get" >
+                <input type="text"
+                       name="search_string"
+                       class="header__top__search__input"
+                       placeholder="Поиск по каталогу товаров" >
+                <button class="header__top__search__submit"
+                        type="submit" >
+                  <img class="header__top__search__submit__icon"
+                       src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/loop.svg" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="header__top__item header__top__item-mobile-icons">
+            <div>
+              <div>
+                <a href="" style="display: none;">
+                  <div class="header__top__icon">
+                    <img alt="Поиск"
+                         src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/search.svg"
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a href="" >
+                  <img class="header__top__icon"
+                       alt="Учетная запись"
+                       src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/login.svg"
+                  />
+                </a>
+              </div>
+
+              <div>
+                <div class="header__top__icon__cart__with__count header__top__icon__cart__with__count__mobile">
+                  <img class="header__top__icon__cart__with__count__image"
+                       alt="Корзина"
+                       src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/cart.svg"
+                  />
+
+                  <div class="header__top__icon__cart__with__count__count-placeholder">
+                    <div>
+                      <div class="header__top__icon__cart__with__count__count-value">2</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div>
+                <div class="header__top__icon__menu">
+                  <div class="mobile__nav__visibility__switcher">
+                    <div class="header__top__icon__menu__horizontal-line"></div>
+                    <div class="header__top__icon__menu__horizontal-line"></div>
+                    <div class="header__top__icon__menu__horizontal-line"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="header__top__item header__top__item-last">
+            <div>
+              <div>
+                <div class="header__working__mode__container">
+                  <div class="header__working__mode__item header__working__mode__item__first"><span class="header__working__mode__item__prefix">Ваш город:</span>&nbsp;Москва</div>
+                  <div class="header__working__mode__item "><span class="header__working__mode__item__prefix">Работаем:</span>&nbsp;09:00 - 21:00</div>
+                </div>
+              </div>
+
+              <div>
+                <div class="header__product__actions__icon__set">
+                  <div>
+                    <a href="">
+                      <div class="reactive__container header__product__actions__icon">
+                        <div class="reactive__content header__top__icon">
+                          <img class="header__product__actions__icon__favorites"
+                               src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/heart.svg"
+                               alt="Избранное"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div>
+                    <a href="">
+                      <div class="reactive__container header__product__actions__icon">
+                        <div class="reactive__content header__top__icon">
+                          <img class="header__product__actions__icon__compare"
+                               src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/balance.svg"
+                               alt="Сравнение" >
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div>
+                    <a href="">
+                      <div class="reactive__container">
+                        <figure class="reactive__content header__order__track__trigger">
+                          <img class="header__top__icon header__product__actions__icon__order-track"
+                               src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/planet.svg"
+                               alt="Где мой заказ">
+                          <figcaption>
+                            Где мой<br>заказ?
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div>
+                <div class="header__phones__container">
+                  <div class="header__phones__item">
+                    <a href="tel:84950250202">
+                      <div class="header__phones__phone">
+                        +7 495 025 02 02
+                      </div>
+                    </a>
+                    <div class="header__phones__phone-hint header__phones__callback-trigger">Заказать обратный звонок</div>
+                  </div>
+
+                  <div class="header__phones__item header__phones__item__second">
+                    <a href="tel:">
+                      <div class="header__phones__phone">
+                        8 800 100 20 30
+                      </div>
+                    </a>
+                    <div class="header__phones__phone-hint">Из России бесплатно</div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div>
+                <div class="header__top__actions__container">
+
+                  <div class="header__top__actions__substrate">
+                    <div class="header__top__actions__trigger header__top__actions__trigger__login">
+                      <a href="">
+                        <span class="reactive__container">
+                          <img class="reactive__content header__top__actions__trigger__icon"
+                               alt="Учетная запись"
+                               src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/user.svg"
+                          />
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="header__top__actions__trigger header__top__actions__trigger__cart">
+                      <a href="">
+                        <div class="reactive__container">
+                          <div class="reactive__content header__top__icon__cart__with__count">
+                            <img class="header__top__icon__cart__with__count__image"
+                                 alt="Корзина"
+                                 src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/cart.svg"
+                            />
+
+                            <div class="header__top__icon__cart__with__count__count-placeholder">
+                              <div>
+                                <div class="header__top__icon__cart__with__count__count-value">2</div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div style="display: none;">
+
+          <button type="button" class="top__basket">
+            <img src="img/cart.svg" alt="Корзина">
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="header__top__mobile__container">
+        <div>
+          <a href="">
+            <figure class="header__top__mobile__search__by__car">
+              <img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/icons/car.svg"
+                   alt="Подбор по авто" >
+              <figcaption>Выберите авто</figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div>
+          <div class="header__top__mobile__phones">
+            <div class="header__top__mobile__phones__item">
+              <a href="tel:84950250202" class="header__top__mobile__phones__item__value">+7 495 025 02 02</a>
+            </div>
+
+            <div class="header__top__mobile__phones__item">
+              <a href="tel:88001234567" class="header__top__mobile__phones__item__value">8 800 123 45 67</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header__nav__desktop__container">
+        <div class="header__nav__desktop__left">
+          <nav class="header__nav__desktop__left__menu">
+            <div class="header__nav__desktop__left__menu-item">
+              <a class="header__nav__desktop__left__menu-item-link"
+                 href="#"
+                 >шины</a>
+            </div>
+            <div class="header__nav__desktop__left__menu-item">
+              <a class="header__nav__desktop__left__menu-item-link"
+                 href="#"
+                 >диски</a>
+            </div>
+            <div class="header__nav__desktop__left__menu-item">
+              <a class="header__nav__desktop__left__menu-item-link"
+                 href="#"
+                 >аксессуары</a>
+            </div>
+            <div class="header__nav__desktop__left__menu-item">
+              <a class="header__nav__desktop__left__menu-item-link"
+                 href="#"
+                 >секретки</a>
+            </div>
+            <div class="header__nav__desktop__left__menu-item">
+              <a class="header__nav__desktop__left__menu-item-link"
+                 href="#"
+                 >распродажа</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="header__nav__desktop__right">
+          <div class="header__nav__desktop__right__menu">
+            <div class="header__nav__desktop__right__menu-item">
+              <a class="header__nav__desktop__right__menu-item-link"
+                 href="#"
+                 >помощь</a>
+            </div>
+
+            <div class="header__nav__desktop__right__menu-item">
+              <a class="header__nav__desktop__right__menu-item-link"
+                 href="#"
+                 >оплата</a>
+            </div>
+
+            <div class="header__nav__desktop__right__menu-item">
+              <a class="header__nav__desktop__right__menu-item-link"
+                 href="#"
+                 >доставка</a>
+            </div>
+
+            <div class="header__nav__desktop__right__menu-item">
+              <a class="header__nav__desktop__right__menu-item-link"
+                 href="#"
+                 >контакты</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile__nav__container">
+    <div class="mobile__nav__overlay mobile__nav__visibility__hide__trigger"></div>
+    <div class="mobile__nav__substrate">
+      <div class="mobile__nav__content__container">
+        <div class="mobile__nav__content">
+          <section class="mobile__nav__main__menu__section">
+            <div class="mobile__nav__main__menu__item__container">
+              <a class="mobile__nav__main__menu__item mobile__nav__main__menu__item-active"
+                 href="catalog/tyre/">Шины</a>
+              <div  class="mobile__nav__main__submenu__section">
+                <div class="mobile__nav__main__submenu__item__container">
+                  <a href="#"
+                     class="mobile__nav__main__submenu__item mobile__nav__main__submenu__item-icon-snow">зимние шины</a>
+                </div>
+
+                <div class="mobile__nav__main__submenu__item__container">
+                  <a href=""
+                     class="mobile__nav__main__submenu__item  mobile__nav__main__submenu__item-icon-sun">летние шины</a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="mobile__nav__main__menu__item__container">
+              <a class="mobile__nav__main__menu__item"
+                 href="">Диски</a>
+            </div>
+
+            <div class="mobile__nav__main__menu__item__container">
+              <a class="mobile__nav__main__menu__item"
+                 href="">Автозапчасти</a>
+            </div>
+
+          </section>
+
+          <div class="mobile__nav__menu__section__divider"></div>
+
+          <section class="mobile__nav__bottom__menu__section">
+            <div class="mobile__nav__bottom__menu__item__container">
+              <a href=""
+                 class="mobile__nav__bottom__menu__item">помощь</a>
+            </div>
+            <div class="mobile__nav__bottom__menu__item__container">
+              <a href=""
+                 class="mobile__nav__bottom__menu__item">оплата</a>
+            </div>
+            <div class="mobile__nav__bottom__menu__item__container">
+              <a href=""
+                 class="mobile__nav__bottom__menu__item">доставка</a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="site/assets/js/custom/common/mobile-nav/index.js"></script>
+
+  <div id="frontend__app"></div>
+
+  <script src="site/assets/js/react-build.js"></script>
+</body>
+</html>
