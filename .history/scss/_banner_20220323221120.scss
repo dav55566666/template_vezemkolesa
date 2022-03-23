@@ -1,0 +1,41 @@
+.main__slider{
+    background-size: 60% 112%;
+}
+.hompage_sberbanner { 
+    max-width: 680px;
+    width: 100%;
+    position: relative;
+    .bgimg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right center;
+    }
+	.text { 
+
+		a { 
+
+			svg { 
+
+				path { 
+
+				}
+			}
+		}
+
+		h2 { 
+
+		}
+
+		.more { 
+
+		}
+
+		p { 
+
+		}
+	}
+}

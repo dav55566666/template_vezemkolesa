@@ -47,10 +47,3 @@ $(function() {
       activateTabContent(item);
     });
 });
-$(".opencreditpopap").click(function(event){
-  $(".credit_popap").css("display", "flex")
-  event.stopPropagation()
-  $("body").click(function(){
-    $(".credit_popap").css("display", "none")
-  })  
-})

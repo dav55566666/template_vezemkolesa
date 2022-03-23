@@ -1,0 +1,176 @@
+.main__slider{
+    background-size: 60% 112%;
+}
+.hompage_sberbanner { 
+    width: 39%;
+    height: 219px;
+    position: relative;
+    margin: 210px 16px 0;
+    padding: 10px 24px 9px;
+    .bgimg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+	.text { 
+        width: 100%;
+        position: relative;
+        z-index: 5;
+        max-width: 284px;
+		a { 
+            display: block;
+            margin-bottom: 5px;
+		}
+
+		h2 { 
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 12px;
+		}
+		.more {     
+            width: 100%;
+            max-width: 132px;
+            height: 30px;
+            background: #036EFE;
+            border-radius: 45px;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 9px;
+            line-height: 11px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 11px;
+		}
+		p { 
+            max-width: 230px;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 6px;
+            line-height: 7px;
+            color: #FFFFFF;            
+		}
+	}
+}
+.credit_popap { 
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 555;
+	.credit_popap_cont { 
+        max-width: 533px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 25px 29px 14px;
+        background: #FFFFFF;
+        box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+        .clousbtn{
+            position: absolute;
+            right: -20px;
+            top: -20px;
+            display: block;
+            padding: 0;
+            width: 20px;
+            span{
+                width: 20px;
+                height: 2px;
+                display: block;
+                background: #fff;
+                position: relative;
+                transform: rotate(45deg);
+                &:last-child{
+                    transform: rotate(-45deg);
+                    top: -2px;
+                }
+            }
+        }
+		.bgimg { 
+            position: absolute;
+            height: 100%;
+            width: 120px;
+            object-fit: cover;
+            left: 0;
+            top: 0;
+		}
+		.text { 
+            width: 100%;
+            max-width: 354px;
+			h2 { 
+                font-family: 'Open Sans Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 100%;
+                margin-bottom: 17px;
+                color: #444444;
+			}
+			p { 
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #444444;
+                margin-bottom: 20px;
+                a{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #444444;
+                    margin-left: 3px;
+                }
+			}
+			.addcredit { 
+                border: 2px solid #D8DCDE;
+                box-sizing: border-box;
+                border-radius: 4px;
+                width: 188px;
+                height: 52px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Open Sans Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #0E8ECF;                
+			}
+		}
+	}
+}
+@media(max-width: 1024px){
+    .hompage_sberbanner{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media(max-width: 400px){
+    .hompage_sberbanner .text h2{
+        font-size: 19px;
+    }
+}

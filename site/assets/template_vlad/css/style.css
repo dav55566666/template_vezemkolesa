@@ -3,7 +3,7 @@
 /* =  Reset
 /*-------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700%7COpen+Sans:400,500,700%7CRoboto+Condensed:300,400,700%7CFira+Sans+Condensed:200,300,400,500,600,700%7CPT+Sans+Narrow:400,700%7CPT+Sans:400,400i,700%7CRoboto:400,400i,700,900&display=swap&subset=cyrillic");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic");
 html,
 body,
@@ -10951,10 +10951,14 @@ li {
     display: none;
   }
 }
+.main__slider {
+  background-size: 60% 112%;
+}
+
 @media (min-width: 1100px) {
   .main__slider {
     background: url("https://storage.yandexcloud.net/nik-auto/vezemkolesa/www/assets/template_vlad/common/img/homepage/slider-tyres.png") no-repeat center right/cover;
-    background-size: 60% 100%;
+    background-size: 60% 112%;
     background-position-x: 100%;
     height: 564px;
     display: flex;
@@ -12503,5 +12507,222 @@ figure {
   }
   .abaut_content .abaut_content_cont .abaut_grid .grid_item p:last-child {
     margin-bottom: 0;
+  }
+}
+.main__slider {
+  background-size: 60% 112%;
+}
+
+.hompage_sberbanner {
+  width: 39%;
+  height: 219px;
+  position: relative;
+  margin: 210px 16px 0;
+  padding: 10px 24px 9px;
+}
+.hompage_sberbanner .bgimg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.hompage_sberbanner .text {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  max-width: 284px;
+}
+.hompage_sberbanner .text a {
+  display: block;
+  margin-bottom: 5px;
+}
+.hompage_sberbanner .text h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.hompage_sberbanner .text .more {
+  width: 100%;
+  max-width: 132px;
+  height: 30px;
+  background: #036EFE;
+  border-radius: 45px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 11px;
+}
+.hompage_sberbanner .text p {
+  max-width: 230px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 7px;
+  color: #FFFFFF;
+}
+
+.credit_popap {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 555;
+}
+.credit_popap .credit_popap_cont {
+  max-width: 533px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 25px 29px 14px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+}
+.credit_popap .credit_popap_cont .clousbtn {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  display: block;
+  padding: 0;
+  width: 20px;
+}
+.credit_popap .credit_popap_cont .clousbtn span {
+  width: 20px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  position: relative;
+  transform: rotate(45deg);
+}
+.credit_popap .credit_popap_cont .clousbtn span:last-child {
+  transform: rotate(-45deg);
+  top: -2px;
+}
+.credit_popap .credit_popap_cont .bgimg {
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+.credit_popap .credit_popap_cont .text {
+  width: 100%;
+  max-width: 354px;
+}
+.credit_popap .credit_popap_cont .text h2 {
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  margin-bottom: 17px;
+  color: #444444;
+}
+.credit_popap .credit_popap_cont .text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #444444;
+  margin-bottom: 20px;
+}
+.credit_popap .credit_popap_cont .text p a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #444444;
+  margin-left: 3px;
+}
+.credit_popap .credit_popap_cont .text .addcredit {
+  border: 2px solid #D8DCDE;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 188px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #0E8ECF;
+}
+
+@media (max-width: 1024px) {
+  .hompage_sberbanner {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .credit_popap {
+    padding: 0 20px;
+  }
+  .credit_popap .credit_popap_cont {
+    padding-right: 8px;
+    max-width: 300px;
+  }
+  .credit_popap .credit_popap_cont .clousbtn {
+    right: 10px;
+    top: 20px;
+  }
+  .credit_popap .credit_popap_cont .clousbtn span {
+    background: #000;
+  }
+  .credit_popap .credit_popap_cont .bgimg {
+    width: 70px;
+  }
+  .credit_popap .credit_popap_cont .text {
+    max-width: 186px;
+  }
+  .credit_popap .credit_popap_cont .text h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .credit_popap .credit_popap_cont .text p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .credit_popap .credit_popap_cont .text p a {
+    font-size: 12px;
+    margin-left: 3px;
+  }
+  .credit_popap .credit_popap_cont .text .addcredit {
+    width: 120px;
+    height: 40px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .hompage_sberbanner .text h2 {
+    font-size: 19px;
   }
 }
