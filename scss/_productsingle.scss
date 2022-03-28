@@ -1,5 +1,6 @@
+@import "vars";
 .page{
-    background-color: white;
+    background-color: $cWhite;
 }
 
 .alternative_tab{
@@ -11,7 +12,7 @@
         margin: 0 auto;
     }
     .alternative-title{
-        font-family: 'Open Sans Condensed';
+        font-family: $font-open-sans;
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
@@ -20,11 +21,11 @@
     }
     .alternative-block{
         .txt{
-            font-family: 'Roboto';
+            font-family: $font-roboto;
             font-style: normal;
             font-weight: 400;
             font-size: 21px;
-            color: #444444;
+            color: $cTundora;
             padding: 20px 0;
 
             span{
@@ -35,11 +36,11 @@
         .alternative-content{
             .about{
                 display: flex;
-                background: #F9F9F9;
+                background: $cAlabaster;
                 padding: 24px 0;
 
                 span{
-                    font-family: 'Roboto';
+                    font-family: $font-roboto;
                     font-style: normal;
                     font-weight: 700;
                     font-size: 16px;
@@ -76,7 +77,7 @@
                     
                     span{
                         font-size: 16px;
-                        font-family: 'Roboto';
+                        font-family: $font-roboto;
                         font-style: normal;
                         display: flex;
                         align-items: center;
@@ -87,11 +88,11 @@
                         }
                         &:nth-child(2){
                             width: 8%;
-                            color: #1E9CDB;
+                            color: $cCerulean;
                         }
                         &:nth-child(3){
                             width: 30%;
-                            color: #1E9CDB;
+                            color: $cCerulean;
                             font-weight: 700;
                             img{
                                 margin-right: 5px;
@@ -107,16 +108,16 @@
                         }
                          &:nth-child(5){
                             width: 10%;
-                            font-family: 'Open Sans Condensed';
+                            font-family: $font-open-sans;
                             font-style: normal;
                             font-weight: 700;
                             font-size: 18px;
-                            color: #6EE152;
+                            color: $cPastelGreen;
                             text-transform: uppercase;
                         }
                         &:nth-child(6){
                             width: 6%;
-                            font-family: 'Roboto';
+                            font-family: $font-roboto;
                             font-style: normal;
                             font-weight: 700;
                             font-size: 16px;
@@ -125,14 +126,14 @@
                     }
                     .vew_btn{
                         width: 10%;
-                        font-family: 'Open Sans Condensed';
+                        font-family: $font-open-sans;
                         font-style: normal;
                         font-weight: 700;
                         font-size: 18px;
                         border: 1px solid lightgray;
                         border-radius: 5px;
                         padding:10px 5px;
-                        color: #0E8ECF;
+                        color: $cCerulean;
                         text-transform: uppercase;
                     }
                 }
@@ -150,21 +151,21 @@
 		.alternative_product_title { 
             width: 100%;
 			h2 { 
-                font-family: 'Open Sans Condensed';
+                font-family: $font-open-sans;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 32px;
                 line-height: 100%;
                 margin-bottom: 40px;
-                color: #444444;
+                color: $cTundora;
 			}
 			.txt { 
-                font-family: 'Roboto';
+                font-family: $font-roboto;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 21px;
                 line-height: 100%;
-                color: #444444;
+                color: $cTundora;
 				span { 
                     font-weight: bold;
                     margin: 0 3px;
@@ -226,12 +227,12 @@
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                font-family: 'Open Sans Condensed';
+                                font-family: $font-open-sans;
                                 font-style: normal;
                                 font-weight: 700;
                                 font-size: 18px;
                                 line-height: 110%;
-                                color: #444444;
+                                color: $cTundora;
 								img { 
                                     min-width: 54px;
                                     height: 54px;
@@ -263,7 +264,7 @@
                                 align-items: center;
                                 max-width: 230px;
 								p { 
-                                    font-family: 'Open Sans Condensed';
+                                    font-family: $font-open-sans;
                                     font-style: normal;
                                     font-weight: 700;
                                     font-size: 27px;
@@ -274,24 +275,24 @@
 							}
 
 							.artikul { 
-                                font-family: 'Open Sans Condensed';
+                                font-family: $font-open-sans;
                                 font-style: normal;
                                 font-weight: 700;
                                 font-size: 21px;
                                 line-height: 100%;
                                 text-transform: uppercase;
-                                color: #7E8589;
+                                color: $cRollingStone;
 							}
 						}
 
 						h2 { 
-                            font-family: 'Open Sans Condensed';
+                            font-family: $font-open-sans;
                             font-style: normal;
                             font-weight: 700;
                             font-size: 38px;
                             line-height: 100%;
                             text-transform: uppercase;
-                            color: #444444;
+                            color: $cTundora;
                             margin-bottom: 10px;
 						}
 						.types { 
@@ -301,12 +302,12 @@
                             justify-content: space-between;
                             align-items: center;
 							p { 
-                                font-family: 'Roboto';
+                                font-family: $font-roboto;
                                 font-style: normal;
                                 font-weight: 700;
                                 font-size: 18px;
                                 line-height: 120%;
-                                color: #1E9CDB;
+                                color: $cCerulean;
 							}
 						}
 					}
@@ -317,13 +318,13 @@
                         margin-top: 10px;
                         margin-left: 16px;
 						li { 
-                            font-family: 'Roboto';
+                            font-family: $font-roboto;
                             font-style: normal;
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 120%;
                             text-indent: 10px;
-                            color: #444444;
+                            color: $cTundora;
                             list-style: disc;
 						}
 					}
@@ -332,13 +333,13 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-                        font-family: 'Open Sans Condensed';
+                        font-family: $font-open-sans;
                         font-style: normal;
                         font-weight: 700;
                         font-size: 18px;
                         line-height: 100%;
                         text-transform: uppercase;
-                        color: #6EE152;
+                        color: $cPastelGreen;
 						svg { 
                             margin-right: 5px;
 						}
@@ -355,23 +356,23 @@
                             justify-content: space-between;
                             align-items: center;
 							p { 
-                                font-family: 'Roboto';
+                                font-family: $font-roboto;
                                 font-style: normal;
                                 font-weight: 900;
                                 font-size: 39px;
                                 line-height: 100%;
                                 margin-right: 10px;
                                 text-transform: uppercase;
-                                color: #0E8ECF;
+                                color: $cCerulean;
 							}
 							span { 
-                                font-family: 'Roboto';
+                                font-family: $font-roboto;
                                 font-style: normal;
                                 font-weight: 900;
                                 font-size: 16px;
                                 line-height: 100%;
                                 text-transform: uppercase;
-                                color: #444444;                                
+                                color: $cTundora;                                
 							}
 						}
 						.right { 
@@ -389,13 +390,13 @@
                                 align-items: center;
 								span { 
                                     margin: 0 5px;
-                                    font-family: 'Roboto';
+                                    font-family: $font-roboto;
                                     font-style: normal;
                                     font-weight: 700;
                                     font-size: 30px;
                                     line-height: 100%;
                                     text-transform: uppercase;
-                                    color: #444444;
+                                    color: $cTundora;
 								}
 							}
 							.addbasket { 
@@ -405,27 +406,27 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                background: #0E8ECF;
+                                background: $cCerulean;
                                 border-radius: 4px;
-                                font-family: 'Open Sans Condensed';
+                                font-family: $font-open-sans;
                                 font-style: normal;
                                 font-weight: 700;
                                 font-size: 18px;
                                 line-height: 100%;
                                 text-transform: uppercase;
-                                color: #FFFFFF;       
+                                color: $cWhite;       
                                 margin: 0 6px;                         
 							}
 							.buy { 
-                                font-family: 'Open Sans Condensed';
+                                font-family: $font-open-sans;
                                 font-style: normal;
                                 font-weight: 700;
                                 font-size: 18px;
                                 line-height: 100%;
                                 text-transform: uppercase;
-                                color: #0E8ECF;
+                                color: $cCerulean;
                                 max-width: 168px;
-                                border: 2px solid #D8DCDE;
+                                border: 2px solid $cIron;
                                 box-sizing: border-box;
                                 border-radius: 4px;
                                 width: 100%;
@@ -441,7 +442,7 @@
 		}
 	}
 }
-@media(max-width: 1320px){
+@media(max-width: $md1px){
     .alternative_product { 
         padding: 40px 20px;
         .alternative_product_cont {
@@ -591,7 +592,7 @@
             margin: 0 auto;
         }
         .alternative-title{
-            font-family: 'Open Sans Condensed';
+            font-family: $font-open-sans;
             font-style: normal;
             font-weight: 700;
             font-size: 32px;
@@ -600,11 +601,11 @@
         }
         .alternative-block{
             .txt{
-                font-family: 'Roboto';
+                font-family: $font-roboto;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 21px;
-                color: #444444;
+                color: $cTundora;
                 padding: 20px 0;
     
                 span{
@@ -682,7 +683,7 @@
         }
     }
 }
-@media(max-width: 1080px){
+@media(max-width: $md2px){
     .alternative_product { 
         padding: 40px 20px;
         .alternative_product_cont {
@@ -825,7 +826,7 @@
         }
     }
 }
-@media(max-width: 780px){
+@media(max-width: $md3px){
     .alternative_product { 
         padding: 40px 20px;
         .alternative_product_cont {
@@ -977,7 +978,7 @@
         }
     }
 }
-@media(max-width: 550px){
+@media(max-width: $md4px){
     .alternative_product { 
         padding: 40px 20px;
         .alternative_product_cont {
