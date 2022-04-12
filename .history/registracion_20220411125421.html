@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="site/assets/template_vlad/css/style.css" type="text/css" />
+</head>
+
+<body>
+
+  <div class="page">
+    <div class="accaunt_page">
+      <div class="accaunt_page_cont">
+        <h2></h2>
+        <div class="accaunt_page_flex">
+          <div class="accaunt_page_img">
+            <img src="img/" alt="">
+          </div>
+          <div class="accaunt_page_forms">
+            <div class="accaunt_page_buttons">
+              <button class="settype active"></button>
+              <button class="settype"></button>
+            </div>
+            <div class="regform">
+              <div class="sendphone">
+                <label for="" class="labeltext">
+                  <input type="text" class="phoneinput">
+                </label>
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span></span>
+                  <p></p>
+                </label>
+                <div class="bottom">
+                  <p></p>
+                  <button type="button" class="sendphonebtn"></button>
+                </div>
+              </div>
+              <div class="sendkod">
+                <label for="" class="labeltext">
+                  <input type="text" class="kodinp">
+                </label>
+                <label for="" class="inpbtn">
+                  <input type="submit" value="">
+                </label>
+              </div>
+            </div>
+            <div class="loginform">
+              <label for="" class="labeltext">
+                <input type="text" class="phoneinput">
+              </label>
+              <label for="" class="labeltext">
+                <input type="password" class="phoneinput">
+              </label>
+              <label for="" class="inpbtn">
+                <input type="submit" value="">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiperrr = new Swiper(".moreModels_swiper", {
+      loop: true,
+      slidesPerView: "auto",
+      watchSlidesProgress: true,
+      pagination: {
+        el: ".pagmodels",
+        clickable: true,
+      },
+    });
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      slidesPerView: "auto",
+      watchSlidesProgress: true,
+      pagination: {
+        el: ".pagthumb",
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper(".myswip", {
+      loop: true,
+      pagination: {
+        el: ".pagthumb",
+        clickable: true,
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+    $(".cheak_content label").click(function(){
+      $(".cheak_content label input").prop("checked", false)
+      $(this).children("input").prop("checked", true)
+      $(".cheak_content label").removeClass("activelabel")
+      $(this).addClass("activelabel")
+    })
+    var count = 0;
+    $(".countplus").click(function(){
+        count = $(this).siblings("span").text();
+        count++;
+        $(this).siblings("span").text(count)
+        $(this).parent().siblings(".itogprice").text(""+$(this).parent().siblings(".price").data("price") * $(this).siblings("span").text()+" ₽")
+    })
+
+    $(".countminus").click(function(){
+        if($(this).siblings("span").text()>1){
+            count = $(this).siblings("span").text();
+            count--;
+            $(this).siblings("span").text(count)
+            $(this).parent().siblings(".itogprice").text(""+$(this).parent().siblings(".price").data("price") * $(this).siblings("span").text()+" ₽")
+        }
+    })
+    var size_R = $(".dioametr")
+    $(".sizebtn").click(function(){
+      $(".sizebtn").removeClass("sizebtn-active")
+      $(this).addClass("sizebtn-active")
+      for(var i = 0; i < size_R.length; i++){
+        if($(size_R[i]).text()==$(this).val()){
+          $(size_R).parent().parent().hide()
+          $(size_R[i]).parent().parent().show()
+        }
+        if($(this).val()=="Показать все"){
+          $(size_R).parent().parent().show()
+        }
+      }
+    })
+    var stokshow = 0
+    var stockarray = $(".stock_js")
+    $(".stockbtn").click(function(){
+      $(".stockbtn").toggleClass("stockbtn-active")
+      $(".not_stock").parent().toggle()
+    })
+    $('.star').click(function(e){
+      var length = $('.review-container .star').length;
+      var selected = $('.review-container .star').index($(this));
+      
+      $( ".review-container .star" ).each(function( index ) {
+        if(index <= selected){
+        $(this).addClass("active");
+        }else{
+          $(this).removeClass("active");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+.typesize { 
+    width: 100%;
+    padding: 20px;
+	.typesize_cont { 
+        max-width: 1800px;
+        width: 100%;
+        margin: 0 auto;
+        .typesize_cont_box{
+            max-width: 1442px;
+            width: 100%;
+            h1 { 
+                font-family: 'Open Sans Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 100%;
+                margin-bottom: 20px;
+                color: #444444;
+            }
+            .typesize_filter { 
+                width: 100%;
+                padding: 40px;
+                border-bottom: 5px solid #0E8ECF;
+                background: #F9F9F9;
+                label { 
+                    width: 100%;
+                    display: block;
+                    max-width: 324px;
+                    select { 
+                        width: 100%;
+                        height: 40px;
+                        background: #FFFFFF;
+                        border: 1px solid #DBE2E9;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        padding: 0 10px;
+                        font-size: 17px;
+                        line-height: 140%;
+                        color: #444444;
+                    }
+                }
+                .filter_top { 
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                    label { 
+                        width: 100%;
+                        display: block;
+                        max-width: 324px;
+                        select { 
+                            width: 100%;
+                            height: 40px;
+                            background: #FFFFFF;
+                            border: 1px solid #DBE2E9;
+                            box-sizing: border-box;
+                            border-radius: 4px;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 17px;
+                            line-height: 140%;
+                            color: #444444;
+                        }
+                    }
+                }
+                .filter_central { 
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .filter_central_left { 
+                        max-width: 728px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-right: 10px;
+                        gap: 10px;
+                        .seasons_btn { 
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 120%;
+                            color: #444444;
+                            opacity: 0.6;
+                            span { 
+                                border: 1px solid #444444;
+                                box-sizing: border-box;
+                                border-radius: 32px;
+                                margin-right: 10px;
+                                width: 34px;
+                                height: 20px;
+                                display: block;
+                                transition: all 0.5s;
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    background: #444444;
+                                    border-radius: 32px;
+                                    position: absolute;
+                                    left: 4px;
+                                    top: 4px;
+                                    display: block;
+                                    border-radius: 50%;
+                                    width: 10px;
+                                    height: 10px;
+                                    transition: all 0.5s;
+                                }
+                            }
+                        }
+                    }
+                    .filter_central_right { 
+                        width: 100%;
+                        max-width: 386px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+                        .openfilter { 
+                            width: 100%;
+                            max-width: 166px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 120%;
+                            color: #444444;
+                            img { 
+                                margin-right: 10px;
+                            }
+                        }
+                        a { 
+                            font-family: 'Open Sans Condensed';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 100%;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            max-width: 200px;
+                            width: 100%;
+                            height: 38px;
+                            background: #0E8ECF;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+                .filter_bottom { 
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    label { 
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        max-width: 320px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: #444444;                        
+                        select { 
+                            margin-left: 14px;
+                            max-width: 180px;
+                        }
+                    }
+
+                    .filter_bottom_right { 
+                        width: 100%;
+                        max-width: 550px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+                        .sort { 
+                            max-width: 338px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 10px;
+                            label { 
+                                max-width: 292px;
+                                select { 
+                                    max-width: 160px;
+                                }
+                            }
+                            .sortbtn { 
+                                max-width: 30px;
+                                width: 100%;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .showtype { 
+                            max-width: 150px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 10px;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 17px;
+                            line-height: 140%;
+                            color: #444444;
+                        }
+                    }
+                }
+            }
+            .typesize_grid{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+            }
+        }
+	}
+}

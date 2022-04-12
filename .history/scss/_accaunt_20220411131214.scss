@@ -1,0 +1,184 @@
+@import "vars";
+.accaunt_page { 
+    width: 100%;
+    padding: 20px 20px 80px;
+	.accaunt_page_cont { 
+        width: 100%;
+        max-width: 1800px;
+        margin: 0 auto;
+		h2 { 
+            font-family: 'Open Sans Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 100%;
+            color: #444444;            
+		}
+		.accaunt_page_flex { 
+            max-width: 944px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+			.accaunt_page_img { 
+                width: 100%;
+                max-width: 430px;
+                margin-right: 15px;
+				img { 
+                    width: 100%;
+				}
+			}
+			.accaunt_page_forms { 
+                max-width: 432px;
+                width: 100%;
+				.accaunt_page_buttons { 
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #949DA7;
+                    margin-bottom: 30px;
+					.settype { 
+                        width: 50%;
+                        height: 46px;
+                        font-family: 'Open Sans Condensed';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 120%;
+                        color: #FFFFFF;        
+                        &.active{
+                            color: #444444;
+                            background: #F9F9F9;
+                        }                
+					}
+				}
+                .labeltext { 
+                    font-family: 'Open Sans Condensed';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 120%;
+                    display: block;
+                    color: #444444;
+                    width: 100%;
+                    .phoneinput { 
+                        width: 100%;
+                        height: 44px;
+                        padding: 0 10px;
+                        background: #FFFFFF;
+                        border: 1px solid #DBE2E9;
+                        box-sizing: border-box;
+                        margin-top: 10px;
+                        border-radius: 4px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 140%;
+                    }
+                }
+				.regform { 
+                    width: 100%;
+					.sendphone { 
+                        width: 100%;
+						.labeltext { 
+                            margin-bottom: 16px;
+						}
+						.checkbox { 
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            position: relative;
+							input { 
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                opacity: 0;
+                                z-index: 2;
+                                cursor: pointer;
+							}
+							span { 
+                                min-width: 18px;
+                                width: 18px;
+                                margin-right: 10px;
+                                height: 18px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 2px solid rgba(177, 177, 177, 0.2);
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                position: relative;
+                                &::before{
+                                    content: url("../img/check.svg");
+                                    position: relative;
+                                    opacity: 0;
+                                }
+							}
+                            input:checked ~ span::before{
+                                opacity: 1;
+                            }
+							p { 
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 13px;
+                                line-height: 120%;
+                                color: #949DA7;                                
+							}
+						}
+
+						.bottom { 
+
+							p { 
+
+							}
+
+							.sendphonebtn { 
+
+							}
+						}
+					}
+
+					.sendkod { 
+                        display: none;
+						.labeltext { 
+
+							.kodinp { 
+
+							}
+						}
+
+						.inpbtn { 
+
+							input { 
+
+							}
+						}
+					}
+				}
+
+				.loginform { 
+                    display: none;
+					.labeltext { 
+
+						.phoneinput { 
+
+						}
+					}
+
+					.inpbtn { 
+
+						input { 
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

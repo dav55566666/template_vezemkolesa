@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="site/assets/template_vlad/css/style.css" type="text/css" />
+</head>
+
+<body>
+
+  <div class="page">
+    <div class="accaunt_page">
+      <div class="accaunt_page_cont">
+        <h2>Авторизация</h2>
+        <div class="accaunt_page_flex">
+          <div class="accaunt_page_img">
+            <img src="img/autoimg.png" alt="">
+          </div>
+          <div class="accaunt_page_forms">
+            <div class="accaunt_page_buttons">
+              <button class="settype active" value="0">Регистрация</button>
+              <button class="settype" value="1">Вход</button>
+            </div>
+            <div class="regform accauntform_js">
+              <div class="sendphone">
+                <label for="" class="labeltext">Пожалуйста, введите ваш телефон:
+                  <input type="text" class="phoneinput" placeholder="+7 (___)___-__-__">
+                </label>
+                <label for="" class="checkbox">
+                  <input type="checkbox">
+                  <span></span>
+                  <p>Я подтверждаю свою дееспособность, даю согласие на получение информации о статусе заказов и на обработку персональных данных.</p>
+                </label>
+                <div class="bottom">
+                  <p>Вы получите СМС с кодом подтверждения</p>
+                  <button type="button" class="sendphonebtn">Получить код</button>
+                </div>
+              </div>
+              <div class="sendkod">
+                <label for="" class="labeltext">Введите код из СМС:
+                  <input type="text" class="kodinp" placeholder="_ _ _ _ _ _">
+                </label>
+                <label for="" class="inpbtn">
+                  <input type="submit" value="Подтвердить">
+                </label>
+              </div>
+            </div>
+            <div class="loginform accauntform_js">
+              <label for="" class="labeltext"> Ваш email: 
+                <input type="email" class="phoneinput">
+              </label>
+              <label for="" class="labeltext"> Придумайте пароль:
+                <input type="password" class="phoneinput">
+              </label>
+              <label for="" class="inpbtn">
+                <input type="submit" value="Зарегистрироваться">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var accform = $(".accauntform_js")
+    $(".settype").click(function(){
+      $(".settype").removeClass("active")
+      $(this).addClass("active")
+      $(accform).hide()
+      $(accform[$(this).val()]).show()
+    })
+    $(".sendphonebtn").click(function(){
+      if($(".phoneinput").val()!=""){
+        $(".sendphone").hide()
+        $(".sendkod").show()
+      }
+    })
+  </script>
+</body>
+
+</html>
