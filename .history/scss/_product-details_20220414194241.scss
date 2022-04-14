@@ -720,30 +720,6 @@ button{
                                         justify-content: flex-start;
                                         align-items: center;
                                         gap: 6px;
-                                        button{
-                                            background: #99CEE9;
-                                            border-radius: 2px;
-                                            width: 19px;
-                                            height: 19px;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            transition: all 0.5s;
-                                            &:hover{
-                                                background: #317ea5;
-                                            }
-                                            span{
-                                                font-family: 'Roboto';
-                                                font-style: normal;
-                                                font-weight: 700;
-                                                font-size: 16px;
-                                                line-height: 120%;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                color: #FFFFFF;
-                                            }
-                                        }
 										span { 
                                             font-family: 'Roboto';
                                             font-style: normal;
@@ -778,12 +754,6 @@ button{
                                         border: 2px solid #D8DCDE;
                                         box-sizing: border-box;
                                         border-radius: 4px;
-                                        transition: all 0.5s;
-                                        &:hover{
-                                            border: 2px solid #0E8ECF;
-                                            color: #D8DCDE;
-                                            background: #0E8ECF;
-                                        }
 									}
 								}
 							}
@@ -2673,7 +2643,6 @@ button{
                     .size_table { 
                         .size_table_buttons { 
                             margin-top: 20px;
-                            margin-bottom: 20px;
                             padding-right: 0px;
                             flex-direction: column-reverse;
                             background: unset;
@@ -2799,11 +2768,9 @@ button{
                                             order: 2;
                                         }
                                         .price { 
-                                            width: max-content;
-                                            order: 5;       
-                                            font-weight: 700;
-                                            font-size: 32px;
-                                            line-height: 120%;                           
+                                            width: 11.7%;
+                                            font-size: 14px;   
+                                            order: 5;                                  
                                         }
                                         .counter { 
                                             width: 100%;
@@ -2817,15 +2784,13 @@ button{
                                         .itogprice { 
                                             font-size: 18px;
                                             width: max-content;
-                                            top: 68px;
-                                            left: 82px;
+                                            left: 175px;
                                             order: 4;
                                             position: absolute;
                                         }
                                         .addbasket { 
-                                            width: 100%;
-                                            max-width: 130px;
-                                            font-size: 18px;
+                                            width: 9.51%;
+                                            font-size: 12px;
                                             height: 40px;
                                             order: 7;
                                         }

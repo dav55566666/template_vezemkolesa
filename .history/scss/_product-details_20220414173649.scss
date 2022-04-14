@@ -77,7 +77,6 @@ button{
                     display: none;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 20px;
                     .pricep { 
                         font-family: 'Roboto';
                         font-style: normal;
@@ -452,6 +451,7 @@ button{
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+                    overflow: auto;
                     label { 
                         padding: 20px;
                         display: flex;
@@ -720,30 +720,6 @@ button{
                                         justify-content: flex-start;
                                         align-items: center;
                                         gap: 6px;
-                                        button{
-                                            background: #99CEE9;
-                                            border-radius: 2px;
-                                            width: 19px;
-                                            height: 19px;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            transition: all 0.5s;
-                                            &:hover{
-                                                background: #317ea5;
-                                            }
-                                            span{
-                                                font-family: 'Roboto';
-                                                font-style: normal;
-                                                font-weight: 700;
-                                                font-size: 16px;
-                                                line-height: 120%;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                color: #FFFFFF;
-                                            }
-                                        }
 										span { 
                                             font-family: 'Roboto';
                                             font-style: normal;
@@ -778,12 +754,6 @@ button{
                                         border: 2px solid #D8DCDE;
                                         box-sizing: border-box;
                                         border-radius: 4px;
-                                        transition: all 0.5s;
-                                        &:hover{
-                                            border: 2px solid #0E8ECF;
-                                            color: #D8DCDE;
-                                            background: #0E8ECF;
-                                        }
 									}
 								}
 							}
@@ -1421,9 +1391,6 @@ button{
 		}
 	}
 }
-.setchecktype,.select_size{
-    display: none;
-}
 @media(max-width: $md1 + px){
     .alternative_product { 
         padding: 40px 20px;
@@ -1808,144 +1775,25 @@ button{
     }
 }
 @media(max-width: 1300px){
-    .product-details{
-        padding: 40px 20px;
-    }
     .evakuation_box{
         display: none;
+    }
+    .size_section .size_container .size_cont_inner .size_outer .size_table .size_table_box .size_table_box_item .childrens .child_item .addbasket{
+        font-size: 14px;
     }
     .size_section { 
         padding: 40px 20px;
         .size_container { 
             .size_cont_inner { 
                 .size_outer { 
-                    .cheak_content { 
-                        label { 
-                            padding: 10px;
-                            span { 
-                                width: 16px;
-                                height: 16px;
-                                margin-right: 8px;
-                                &::before{
-                                    width: 8px;
-                                    height: 8px;
-                                    border-radius: 1px;
-                                }
-                            }
-                            p { 
-                                font-size: 18px;
-                            }
-                        }
-                    }
+                    width: 100%;
                     .size_table { 
+                        overflow: auto;
                         .size_table_buttons { 
-                            margin-top: 32px;
-                            padding-right: 20px;
-                            .left { 
-                                .sizebtn { 
-                                    padding: 12px 40px;
-                                    font-size: 18px;
-                                }
-                            }
-                            .right { 
-                                max-width: 280px;
-                                margin-left: 10px;
-                                .stockbtn { 
-                                    font-size: 16px;
-                                    span { 
-                                        width: 34px;
-                                        height: 20px;
-                                        margin-right: 10px;
-                                        &::before{
-                                            left: 4px;
-                                            top: 3px;
-                                            width: 12px;
-                                            height: 12px;
-                                        }
-                                    }
-                                    
-                                }
-                                .stockbtn-active{
-                                    span{
-                                        &::before{
-                                            left: 16px;
-                                        }
-                                    }
-                                }
-                            }
+                            min-width: 1052px;
                         }
                         .size_table_box { 
-                            .size_table_box_title { 
-                                padding: 12px 20px;
-                                margin-bottom: 10px;
-                                p { 
-                                    font-size: 18px;
-                                    &:nth-child(1){width: 9.7%;}
-                                    &:nth-child(2){width: 9%;}
-                                    &:nth-child(3){width: 15.25%;}
-                                    &:nth-child(4){width: 15.25%;}
-                                    &:nth-child(5){width: 11.78%;}
-                                    &:nth-child(6){width: 10.4%;}
-                                    &:nth-child(7){width: 10.4%;}
-                                    &:nth-child(8){width: 9.7%;}
-                                }
-                            }
-                            .size_table_box_item { 
-                                padding: 12px 20px;
-                                .left { 
-                                    width: 9.7%;
-                                    .dioametr { 
-                                        font-size: 32px;
-                                    }
-                                }
-                                .childrens { 
-                                    width:  88.9%;
-                                    .child_item { 
-                                        padding: 8px 0;
-                                        margin-bottom: 10px;
-                                        .kod { 
-                                            font-size: 14px;    
-                                            width: 10.14%;                                 
-                                        }
-                                        .tposizep { 
-                                            width: 17.16%;
-                                            font-size: 12px;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .indexp { 
-                                            width: 17.16%;
-                                            font-size: 14px;
-                                        }
-                                        .in_stock,.not_stock { 
-                                            width: 13.26%;
-                                            font-size: 14px;
-                                        }
-                                        .price { 
-                                            width: 11.7%;
-                                            font-size: 14px;                                     
-                                        }
-                                        .counter { 
-                                            width: 10.14%;
-                                            font-size: 14px;
-                                            gap: 6px;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .itogprice { 
-                                            font-size: 14px;
-                                            width: 10.9%;
-                                        }
-                                        .addbasket { 
-                                            width: 9.51%;
-                                            font-size: 14px;
-                                            height: 52px;
-                                        }
-                                    }
-                                }
-                            }
+                            min-width: 1052px;
                         }
                     }
                 }
@@ -2316,164 +2164,8 @@ button{
             }
         }
     }
-    .size_section { 
-        padding: 40px 20px;
-        .size_container { 
-            .size_cont_inner { 
-                .size_outer { 
-                    .cheak_content { 
-                        label { 
-                            padding: 10px;
-                            span { 
-                                width: 16px;
-                                height: 16px;
-                                margin-right: 4px;
-                                &::before{
-                                    width: 8px;
-                                    height: 8px;
-                                    border-radius: 1px;
-                                }
-                            }
-                            p { 
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                    .size_table { 
-                        .size_table_buttons { 
-                            margin-top: 32px;
-                            padding-right: 10px;
-                            .left { 
-                                .sizebtn { 
-                                    padding: 12px 10px;
-                                    font-size: 18px;
-                                }
-                            }
-                            .right { 
-                                max-width: 280px;
-                                margin-left: 10px;
-                                .stockbtn { 
-                                    font-size: 16px;
-                                    span { 
-                                        width: 34px;
-                                        height: 20px;
-                                        margin-right: 10px;
-                                        &::before{
-                                            left: 4px;
-                                            top: 3px;
-                                            width: 12px;
-                                            height: 12px;
-                                        }
-                                    }
-                                    
-                                }
-                                .stockbtn-active{
-                                    span{
-                                        &::before{
-                                            left: 16px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .size_table_box { 
-                            .size_table_box_title { 
-                                padding: 12px 20px;
-                                margin-bottom: 10px;
-                                p { 
-                                    font-size: 18px;
-                                    &:nth-child(1){width: 9.7%;}
-                                    &:nth-child(2){width: 9%;}
-                                    &:nth-child(3){width: 15.25%;}
-                                    &:nth-child(4){width: 15.25%;}
-                                    &:nth-child(5){width: 11.78%;}
-                                    &:nth-child(6){width: 10.4%;}
-                                    &:nth-child(7){width: 10.4%;}
-                                    &:nth-child(8){width: 9.7%;}
-                                }
-                            }
-                            .size_table_box_item { 
-                                padding: 12px 20px;
-                                .left { 
-                                    width: 9.7%;
-                                    .dioametr { 
-                                        font-size: 32px;
-                                    }
-                                }
-                                .childrens { 
-                                    width:  88.9%;
-                                    .child_item { 
-                                        padding: 8px 0;
-                                        margin-bottom: 10px;
-                                        .kod { 
-                                            font-size: 14px;    
-                                            width: 10.14%;                                 
-                                        }
-                                        .tposizep { 
-                                            width: 17.16%;
-                                            font-size: 12px;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .indexp { 
-                                            width: 17.16%;
-                                            font-size: 14px;
-                                        }
-                                        .in_stock,.not_stock { 
-                                            width: 13.26%;
-                                            font-size: 14px;
-                                        }
-                                        .price { 
-                                            width: 11.7%;
-                                            font-size: 14px;                                     
-                                        }
-                                        .counter { 
-                                            width: 10.14%;
-                                            font-size: 14px;
-                                            gap: 6px;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .itogprice { 
-                                            font-size: 14px;
-                                            width: 10.9%;
-                                        }
-                                        .addbasket { 
-                                            width: 9.51%;
-                                            font-size: 12px;
-                                            height: 40px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 @media(max-width: $md3 + px){   
-    .evakuation_box{
-        position: unset;
-        display: block;
-        max-width: unset;
-        height: 434px;
-        .soc{
-            display: none;
-        }
-        .top{
-            width: 100%;
-            height: 100%;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
     .product-details { 
         padding: 40px 20px;
         .product-details_cont { 
@@ -2523,17 +2215,11 @@ button{
                     }
                 }
                 .product-details_info { 
-                    max-width: unset;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    flex-direction: column;
+                    max-width: 842px;
                     .info_top { 
-                        gap: 0px;
-                        max-width: unset;
-                        order: 3;
-                        margin-bottom: 0px;
-                        margin-top: 20px;
+                        gap: 10px;
+                        max-width: 474px;
+                        margin-bottom: 10px;
                         .manufacturer { 
                             display: none;
                         }
@@ -2553,12 +2239,10 @@ button{
                     }
                     .seasons_wheel_flex { 
                         margin-bottom: 10px;
-                        gap: 10px;
-                        order: 4;
-                        padding: 0 8px;
+                        gap: 20px;
                         p { 
-                            gap: 5px;
-                            font-size: 12px;
+                            gap: 10px;
+                            font-size: 14px;
                             img{
                                 width: 18px;
                                 height: 18px;
@@ -2570,21 +2254,19 @@ button{
                     }
                     ul { 
                         margin-left: 0px;
-                        margin-bottom: 30px;
-                        order: 1;
+                        margin-bottom: 10px;
                         li { 
-                            padding: 0 8px;
-                            font-size: 14px;                 
+                            font-size: 12px;
+                            list-style: none;
+                            text-indent: 0px;                     
                         }
                     }
                     .adreas { 
-                        order: 2;
                         .adreas_item { 
                             max-width: 846px;
                             .adreas_item_title { 
-                                max-width: 100%;
+                                max-width: 62%;
                                 gap: 4px;
-                                border-radius: 4px 5px 0px 0px;
                                 padding: 4px 8px;
                                 p { 
                                     font-size: 12px;                              
@@ -2598,30 +2280,17 @@ button{
                                 }
                             }
                             .adreas_item_hide { 
-                                max-width: unset;
-                                position: unset;
-                                height: 0;
-                                border-radius: 0px 0px 4px 4px;
-                                overflow: hidden;
-                                opacity: 1;
-                                margin-top: -4px;
-                                padding: 0px 10px;
+                                max-width: 200px;
+                                padding: 20px 10px;
                                 span { 
                                     gap: 5px;
                                     font-size: 12px;
                                     margin-bottom: 10px;
-                                    margin-top: 20px;
                                 }
                                 .adreas_item_info { 
                                     p { 
                                         font-size: 14px;
                                     }
-                                }
-                            }
-                            &:hover{
-                                .adreas_item_hide{
-                                    height: 140px;
-                                    margin-bottom: 8px;
                                 }
                             }
                         }
@@ -2632,211 +2301,6 @@ button{
     }
     .addreviews{
         padding: 40px 0 0;
-    }
-    .size_section { 
-        padding: 40px 20px;
-        .size_container { 
-            .size_cont_inner { 
-                .size_outer { 
-                    .cheak_content { 
-                        position: relative;
-                        .setchecktype{
-                            position: absolute;
-                            right: 4px;
-                            top: 10px;
-                            z-index: 2;
-                            display: block;
-                        }
-                        label { 
-                            padding: 16px 10px;
-                            width: 100%;
-                            filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
-                            border-radius: 6px;
-                            display: none;
-                            &:nth-child(2){
-                                display: block;
-                            }
-                            span { 
-                                display: none;
-                            }
-                            p { 
-                                font-family: 'Open Sans Condensed';
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 23px;
-                                line-height: 100%;
-                                text-transform: uppercase;
-                                color: #1E9CDB;                                
-                            }
-                        }
-                    }
-                    .size_table { 
-                        .size_table_buttons { 
-                            margin-top: 20px;
-                            margin-bottom: 20px;
-                            padding-right: 0px;
-                            flex-direction: column-reverse;
-                            background: unset;
-                            gap: 20px;
-                            .select_size{
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                font-family: 'Open Sans Condensed';
-                                font-style: normal;
-                                max-width: 320px;
-                                margin: 0 auto;
-                                font-weight: 700;
-                                font-size: 18px;
-                                width: 100%;
-                                line-height: 120%;
-                                color: #444444;
-                                select{
-                                    font-family: 'Inter';
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    font-size: 17px;
-                                    line-height: 140%;
-                                    color: #0E8ECF;
-                                    padding: 0 10px;
-                                    max-width: 180px;
-                                    width: 100%;
-                                    height: 44px;
-                                    background: #FFFFFF;
-                                    border: 1px solid #DBE2E9;
-                                    box-sizing: border-box;
-                                    border-radius: 4px;
-                                }
-                            }
-                            .left { 
-                                display: none;
-                            }
-                            .right { 
-                                max-width: 280px;
-                                margin-left: 10px;
-                                .stockbtn { 
-                                    font-size: 16px;
-                                    color: #1E9CDB;
-                                    span { 
-                                        width: 34px;
-                                        height: 20px;
-                                        margin-right: 10px;
-                                        border: 1px solid #1E9CDB;
-                                        &::before{
-                                            left: 4px;
-                                            top: 3px;
-                                            width: 12px;
-                                            background: #1E9CDB;
-                                            height: 12px;
-                                        }
-                                    }
-                                    
-                                }
-                                .stockbtn-active{
-                                    span{
-                                        &::before{
-                                            left: 16px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .size_table_box { 
-                            .size_table_box_title { 
-                                display: none;
-                            }
-                            .size_table_box_item { 
-                                padding: 0;
-                                margin-bottom: 20px;
-                                flex-direction: column;
-                                .left { 
-                                    width: 100%;
-                                    margin-bottom: 20px;
-                                    padding: 15px;
-                                    background: #F9F9F9;
-                                    .dioametr { 
-                                        font-size: 25px;
-                                    }
-                                }
-                                .childrens { 
-                                    width:  100%;
-                                    .child_item { 
-                                        background: #FFFFFF;
-                                        border: 1px solid #F4F4F4;
-                                        box-sizing: border-box;
-                                        margin-bottom: 20px;
-                                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
-                                        border-radius: 6px;
-                                        flex-wrap: wrap;
-                                        padding: 15px;
-                                        justify-content: space-between;
-                                        align-items: flex-start;
-                                        position: relative;
-                                        .kod { 
-                                            position: absolute;                                
-                                            right: 15px;
-                                            top: 35px;
-                                            font-size: 12px;
-                                            line-height: 120%;
-                                            width: max-content;
-                                        }
-                                        .tposizep { 
-                                            width: 60%;
-                                            font-size: 12px;
-                                            margin-bottom: 18px;
-                                            order: 1;
-                                            span { 
-                                                font-size: 16px;
-                                            }
-                                        }
-                                        .indexp { 
-                                            display: none;
-                                        }
-                                        .in_stock,.not_stock { 
-                                            width: 37%;
-                                            text-align: right;
-                                            font-size: 14px;
-                                            order: 2;
-                                        }
-                                        .price { 
-                                            width: max-content;
-                                            order: 5;       
-                                            font-weight: 700;
-                                            font-size: 32px;
-                                            line-height: 120%;                           
-                                        }
-                                        .counter { 
-                                            width: 100%;
-                                            font-size: 14px;
-                                            gap: 6px;
-                                            order: 3;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .itogprice { 
-                                            font-size: 18px;
-                                            width: max-content;
-                                            top: 68px;
-                                            left: 82px;
-                                            order: 4;
-                                            position: absolute;
-                                        }
-                                        .addbasket { 
-                                            width: 100%;
-                                            max-width: 130px;
-                                            font-size: 18px;
-                                            height: 40px;
-                                            order: 7;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 @media(max-width: $md4 + px){

@@ -720,30 +720,6 @@ button{
                                         justify-content: flex-start;
                                         align-items: center;
                                         gap: 6px;
-                                        button{
-                                            background: #99CEE9;
-                                            border-radius: 2px;
-                                            width: 19px;
-                                            height: 19px;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            transition: all 0.5s;
-                                            &:hover{
-                                                background: #317ea5;
-                                            }
-                                            span{
-                                                font-family: 'Roboto';
-                                                font-style: normal;
-                                                font-weight: 700;
-                                                font-size: 16px;
-                                                line-height: 120%;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                color: #FFFFFF;
-                                            }
-                                        }
 										span { 
                                             font-family: 'Roboto';
                                             font-style: normal;
@@ -778,12 +754,6 @@ button{
                                         border: 2px solid #D8DCDE;
                                         box-sizing: border-box;
                                         border-radius: 4px;
-                                        transition: all 0.5s;
-                                        &:hover{
-                                            border: 2px solid #0E8ECF;
-                                            color: #D8DCDE;
-                                            background: #0E8ECF;
-                                        }
 									}
 								}
 							}
@@ -1421,7 +1391,7 @@ button{
 		}
 	}
 }
-.setchecktype,.select_size{
+.setchecktype{
     display: none;
 }
 @media(max-width: $md1 + px){
@@ -2642,10 +2612,9 @@ button{
                         position: relative;
                         .setchecktype{
                             position: absolute;
-                            right: 4px;
-                            top: 10px;
+                            right: 0;
+                            top: 0;
                             z-index: 2;
-                            display: block;
                         }
                         label { 
                             padding: 16px 10px;
@@ -2653,7 +2622,7 @@ button{
                             filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
                             border-radius: 6px;
                             display: none;
-                            &:nth-child(2){
+                            &:first-child{
                                 display: block;
                             }
                             span { 
@@ -2672,61 +2641,27 @@ button{
                     }
                     .size_table { 
                         .size_table_buttons { 
-                            margin-top: 20px;
-                            margin-bottom: 20px;
-                            padding-right: 0px;
-                            flex-direction: column-reverse;
-                            background: unset;
-                            gap: 20px;
-                            .select_size{
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                font-family: 'Open Sans Condensed';
-                                font-style: normal;
-                                max-width: 320px;
-                                margin: 0 auto;
-                                font-weight: 700;
-                                font-size: 18px;
-                                width: 100%;
-                                line-height: 120%;
-                                color: #444444;
-                                select{
-                                    font-family: 'Inter';
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    font-size: 17px;
-                                    line-height: 140%;
-                                    color: #0E8ECF;
-                                    padding: 0 10px;
-                                    max-width: 180px;
-                                    width: 100%;
-                                    height: 44px;
-                                    background: #FFFFFF;
-                                    border: 1px solid #DBE2E9;
-                                    box-sizing: border-box;
-                                    border-radius: 4px;
-                                }
-                            }
+                            margin-top: 32px;
+                            padding-right: 10px;
                             .left { 
-                                display: none;
+                                .sizebtn { 
+                                    padding: 12px 10px;
+                                    font-size: 18px;
+                                }
                             }
                             .right { 
                                 max-width: 280px;
                                 margin-left: 10px;
                                 .stockbtn { 
                                     font-size: 16px;
-                                    color: #1E9CDB;
                                     span { 
                                         width: 34px;
                                         height: 20px;
                                         margin-right: 10px;
-                                        border: 1px solid #1E9CDB;
                                         &::before{
                                             left: 4px;
                                             top: 3px;
                                             width: 12px;
-                                            background: #1E9CDB;
                                             height: 12px;
                                         }
                                     }
@@ -2746,88 +2681,57 @@ button{
                                 display: none;
                             }
                             .size_table_box_item { 
-                                padding: 0;
-                                margin-bottom: 20px;
-                                flex-direction: column;
+                                padding: 12px 20px;
                                 .left { 
-                                    width: 100%;
-                                    margin-bottom: 20px;
-                                    padding: 15px;
-                                    background: #F9F9F9;
+                                    width: 9.7%;
                                     .dioametr { 
-                                        font-size: 25px;
+                                        font-size: 32px;
                                     }
                                 }
                                 .childrens { 
-                                    width:  100%;
+                                    width:  88.9%;
                                     .child_item { 
-                                        background: #FFFFFF;
-                                        border: 1px solid #F4F4F4;
-                                        box-sizing: border-box;
-                                        margin-bottom: 20px;
-                                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
-                                        border-radius: 6px;
-                                        flex-wrap: wrap;
-                                        padding: 15px;
-                                        justify-content: space-between;
-                                        align-items: flex-start;
-                                        position: relative;
+                                        padding: 8px 0;
+                                        margin-bottom: 10px;
                                         .kod { 
-                                            position: absolute;                                
-                                            right: 15px;
-                                            top: 35px;
-                                            font-size: 12px;
-                                            line-height: 120%;
-                                            width: max-content;
+                                            font-size: 14px;    
+                                            width: 10.14%;                                 
                                         }
                                         .tposizep { 
-                                            width: 60%;
+                                            width: 17.16%;
                                             font-size: 12px;
-                                            margin-bottom: 18px;
-                                            order: 1;
                                             span { 
-                                                font-size: 16px;
+                                                font-size: 14px;
                                             }
                                         }
                                         .indexp { 
-                                            display: none;
+                                            width: 17.16%;
+                                            font-size: 14px;
                                         }
                                         .in_stock,.not_stock { 
-                                            width: 37%;
-                                            text-align: right;
+                                            width: 13.26%;
                                             font-size: 14px;
-                                            order: 2;
                                         }
                                         .price { 
-                                            width: max-content;
-                                            order: 5;       
-                                            font-weight: 700;
-                                            font-size: 32px;
-                                            line-height: 120%;                           
+                                            width: 11.7%;
+                                            font-size: 14px;                                     
                                         }
                                         .counter { 
-                                            width: 100%;
+                                            width: 10.14%;
                                             font-size: 14px;
                                             gap: 6px;
-                                            order: 3;
                                             span { 
                                                 font-size: 14px;
                                             }
                                         }
                                         .itogprice { 
-                                            font-size: 18px;
-                                            width: max-content;
-                                            top: 68px;
-                                            left: 82px;
-                                            order: 4;
-                                            position: absolute;
+                                            font-size: 14px;
+                                            width: 10.9%;
                                         }
                                         .addbasket { 
-                                            width: 100%;
-                                            max-width: 130px;
-                                            font-size: 18px;
+                                            width: 9.51%;
+                                            font-size: 12px;
                                             height: 40px;
-                                            order: 7;
                                         }
                                     }
                                 }

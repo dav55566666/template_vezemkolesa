@@ -32,83 +32,6 @@ button{
 			.product-details_slider { 
                 width: 100%;
                 max-width: 420px;
-                .manufacturer { 
-                    display: none;
-                    max-width: 72px;
-                    width: 100px;
-                    img { 
-                        width: 100%;
-                    }
-                }
-                .wheel-reiting { 
-                    width: 100%;
-                    display: none;
-                    margin-bottom: 5px;
-                    margin-top: 10px;
-                    justify-content: flex-start;
-                    align-items: center;
-					p { 
-                        font-family: 'Open Sans Condensed';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 100%;
-                        text-transform: uppercase;
-                        color: #DDDDDD;              
-                        margin-right: 0px;          
-					}
-					.reviews__star { 
-                        width: 16px;
-                        height: 16px;
-					}
-				}
-                h1 { 
-                    display: none;
-                    font-family: 'Open Sans Condensed';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 100%;
-                    text-transform: uppercase;
-                    color: #444444;         
-                    margin-bottom: 5px;           
-                }
-                .slider_top_flex { 
-                    display: none;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    .pricep { 
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 900;
-                        font-size: 16px;
-                        line-height: 100%;
-                        text-transform: uppercase;
-                        color: #444444;
-                        span { 
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 900;
-                            font-size: 28px;
-                            line-height: 100%;
-                            text-transform: uppercase;
-                            color: #0E8ECF;
-                            margin-left: 3px;
-                        }
-                    }
-                    .typesizep { 
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 900;
-                        font-size: 15px;
-                        line-height: 100%;
-                        color: #1E9CDB;
-                        width: max-content;
-                        padding-bottom: 2px;
-                        border-bottom: 2px dashed #1E9CDB;
-                    }
-                }
 				.myswip { 
                     width: 100%;
                     margin-bottom: 40px;
@@ -452,6 +375,7 @@ button{
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+                    overflow: auto;
                     label { 
                         padding: 20px;
                         display: flex;
@@ -720,30 +644,6 @@ button{
                                         justify-content: flex-start;
                                         align-items: center;
                                         gap: 6px;
-                                        button{
-                                            background: #99CEE9;
-                                            border-radius: 2px;
-                                            width: 19px;
-                                            height: 19px;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            transition: all 0.5s;
-                                            &:hover{
-                                                background: #317ea5;
-                                            }
-                                            span{
-                                                font-family: 'Roboto';
-                                                font-style: normal;
-                                                font-weight: 700;
-                                                font-size: 16px;
-                                                line-height: 120%;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                color: #FFFFFF;
-                                            }
-                                        }
 										span { 
                                             font-family: 'Roboto';
                                             font-style: normal;
@@ -778,12 +678,6 @@ button{
                                         border: 2px solid #D8DCDE;
                                         box-sizing: border-box;
                                         border-radius: 4px;
-                                        transition: all 0.5s;
-                                        &:hover{
-                                            border: 2px solid #0E8ECF;
-                                            color: #D8DCDE;
-                                            background: #0E8ECF;
-                                        }
 									}
 								}
 							}
@@ -1421,9 +1315,6 @@ button{
 		}
 	}
 }
-.setchecktype,.select_size{
-    display: none;
-}
 @media(max-width: $md1 + px){
     .alternative_product { 
         padding: 40px 20px;
@@ -1664,517 +1555,9 @@ button{
             }
         }
     }
-    .product-details { 
-        padding-right: 324px;
-        .product-details_cont { 
-            .product-details_box { 
-                padding: 40px 20px;
-                gap: 20px;
-                .product-details_slider { 
-                    max-width: 320px;
-                    .myswip { 
-                        margin-bottom: 30px;
-                        .swiper-wrapper {
-                            .swiper-slide { 
-                                .productimg { 
-                                    height: 360px;
-                                }
-                                .seasons_img { 
-                                    width: 32px;
-                                    gap: 10px;
-                                }
-                            }
-                        }
-                    }
-                    .mySwiper { 
-                        .swiper-wrapper { 
-                            .swiper-slide { 
-                                max-width: 100px;
-                                height: 100px;
-                                margin-right: 10px;
-                            }
-                        }
-                    }
-                    .pagthumb{
-                        gap: 10px;
-                        margin-top: 20px;
-                    }
-                }
-                .product-details_info { 
-                    max-width: 842px;
-                    .info_top { 
-                        gap: 10px;
-                        max-width: 474px;
-                        margin-bottom: 10px;
-                        .manufacturer { 
-                            max-width: 96px;
-                        }
-                        .info_bonus { 
-                            max-width: 328px;
-                            ul { 
-                                li { 
-                                    position: relative;
-                                    display: block;
-                                    list-style: disc;
-                                    p { 
-                                        font-size: 12px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .seasons_wheel_flex { 
-                        margin-bottom: 20px;
-                        gap: 20px;
-                        p { 
-                            gap: 10px;
-                            font-size: 14px;
-                            img{
-                                width: 18px;
-                                height: 18px;
-                            }
-                        }
-                    }
-                    .wheel-reiting { 
-                        p { 
-                            font-size: 26px;          
-                            margin-right: 20px;          
-                        }
-                        .reviews__star { 
-                            width: 18px;
-                            height: 18px;
-                        }
-                    }
-                    h1 { 
-                        font-size: 40px;   
-                        margin-bottom: 10px;          
-                    }
-                    .pricep { 
-                        font-size: 14px;
-                        span { 
-                            font-size: 30px;
-                            margin-left: 3px;
-                        }
-                    }
-                    .typesizep { 
-                        font-size: 14px;
-                        margin: 10px 0 20px;
-                    }
-                    ul { 
-                        margin-left: 20px;
-                        margin-bottom: 20px;
-                        li { 
-                            font-size: 12px;
-                            text-indent: 0px;                     
-                        }
-                    }
-                    .adreas { 
-                        .adreas_item { 
-                            max-width: 846px;
-                            .adreas_item_title { 
-                                max-width: 62%;
-                                gap: 4px;
-                                padding: 4px 8px;
-                                p { 
-                                    font-size: 14px;                              
-                                }
-                                img { 
-                                    width: 17px;
-                                    height: 17px;
-                                }
-                                span { 
-                                    font-size: 14px;                       
-                                }
-                            }
-                            .adreas_item_hide { 
-                                max-width: 200px;
-                                padding: 20px 10px;
-                                span { 
-                                    gap: 5px;
-                                    font-size: 12px;
-                                    margin-bottom: 10px;
-                                }
-                                .adreas_item_info { 
-                                    p { 
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media(max-width: 1300px){
-    .product-details{
-        padding: 40px 20px;
-    }
-    .evakuation_box{
-        display: none;
-    }
-    .size_section { 
-        padding: 40px 20px;
-        .size_container { 
-            .size_cont_inner { 
-                .size_outer { 
-                    .cheak_content { 
-                        label { 
-                            padding: 10px;
-                            span { 
-                                width: 16px;
-                                height: 16px;
-                                margin-right: 8px;
-                                &::before{
-                                    width: 8px;
-                                    height: 8px;
-                                    border-radius: 1px;
-                                }
-                            }
-                            p { 
-                                font-size: 18px;
-                            }
-                        }
-                    }
-                    .size_table { 
-                        .size_table_buttons { 
-                            margin-top: 32px;
-                            padding-right: 20px;
-                            .left { 
-                                .sizebtn { 
-                                    padding: 12px 40px;
-                                    font-size: 18px;
-                                }
-                            }
-                            .right { 
-                                max-width: 280px;
-                                margin-left: 10px;
-                                .stockbtn { 
-                                    font-size: 16px;
-                                    span { 
-                                        width: 34px;
-                                        height: 20px;
-                                        margin-right: 10px;
-                                        &::before{
-                                            left: 4px;
-                                            top: 3px;
-                                            width: 12px;
-                                            height: 12px;
-                                        }
-                                    }
-                                    
-                                }
-                                .stockbtn-active{
-                                    span{
-                                        &::before{
-                                            left: 16px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .size_table_box { 
-                            .size_table_box_title { 
-                                padding: 12px 20px;
-                                margin-bottom: 10px;
-                                p { 
-                                    font-size: 18px;
-                                    &:nth-child(1){width: 9.7%;}
-                                    &:nth-child(2){width: 9%;}
-                                    &:nth-child(3){width: 15.25%;}
-                                    &:nth-child(4){width: 15.25%;}
-                                    &:nth-child(5){width: 11.78%;}
-                                    &:nth-child(6){width: 10.4%;}
-                                    &:nth-child(7){width: 10.4%;}
-                                    &:nth-child(8){width: 9.7%;}
-                                }
-                            }
-                            .size_table_box_item { 
-                                padding: 12px 20px;
-                                .left { 
-                                    width: 9.7%;
-                                    .dioametr { 
-                                        font-size: 32px;
-                                    }
-                                }
-                                .childrens { 
-                                    width:  88.9%;
-                                    .child_item { 
-                                        padding: 8px 0;
-                                        margin-bottom: 10px;
-                                        .kod { 
-                                            font-size: 14px;    
-                                            width: 10.14%;                                 
-                                        }
-                                        .tposizep { 
-                                            width: 17.16%;
-                                            font-size: 12px;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .indexp { 
-                                            width: 17.16%;
-                                            font-size: 14px;
-                                        }
-                                        .in_stock,.not_stock { 
-                                            width: 13.26%;
-                                            font-size: 14px;
-                                        }
-                                        .price { 
-                                            width: 11.7%;
-                                            font-size: 14px;                                     
-                                        }
-                                        .counter { 
-                                            width: 10.14%;
-                                            font-size: 14px;
-                                            gap: 6px;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .itogprice { 
-                                            font-size: 14px;
-                                            width: 10.9%;
-                                        }
-                                        .addbasket { 
-                                            width: 9.51%;
-                                            font-size: 14px;
-                                            height: 52px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .moreModels { 
-        padding: 20px 20px;
-        .moreModels_cont { 
-            h2 { 
-                font-size: 28px;
-                margin-bottom: 30px;         
-            }
-        }
-    }
-    .addreviews { 
-        padding: 40px 20px;
-        padding-right: 20px;
-        .addreviews_cont { 
-            .addreviews_cont_box{
-                padding: 20px 16px;
-                h2 { 
-                    font-size: 28px;
-                    margin-bottom: 30px;
-                }
-                form { 
-                    .stars { 
-                        margin-bottom: 20px;
-                        p { 
-                            font-size: 18px;   
-                            margin-right: 8px;                 
-                        }
-                        .review-container { 
-                            max-width: 120px;
-                            .star { 
-                               width: 20px;
-                               height: 20px;
-                            }
-                        }
-                    }
-    
-                    .formflex { 
-                        gap: 20px 0;
-                        label { 
-                            width: 100%;
-                            &:nth-child(2n+2){
-                                width: 100%;
-                            }
-                            input,textarea { 
-                                height: 44px;
-                                padding: 0 10px;
-                                font-size: 17px;
-                            }
-                            textarea{
-                                height: 108px;
-                            }
-                        }
-                        .selects { 
-                            width: 100%;
-                            label { 
-                                &:first-child{
-                                    margin-bottom: 20px;
-                                }
-                                select { 
-                                    height: 44px;
-                                    padding: 0 10px;
-                                    font-size: 17px;
-                                }
-                            }
-                        }
-                    }
-                    .snedform { 
-                        margin-top: 40px;
-                        input { 
-                            max-width: 200px;
-                            height: 38px;
-                            font-size: 18px;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 @media(max-width: $md2 + px){
-    .product-details { 
-        padding: 40px 20px;
-        .product-details_cont { 
-            .product-details_box { 
-                padding: 0;
-                border: unset;
-                gap: 20px;
-                .product-details_slider { 
-                    max-width: 220px;
-                    .myswip { 
-                        margin-bottom: 20px;
-                        .swiper-wrapper {
-                            .swiper-slide { 
-                                .productimg { 
-                                    height: 280px;
-                                }
-                                .seasons_img { 
-                                    width: 32px;
-                                    gap: 10px;
-                                }
-                            }
-                        }
-                    }
-                    .mySwiper { 
-                        .swiper-wrapper { 
-                            .swiper-slide { 
-                                max-width: 100px;
-                                height: 100px;
-                                margin-right: 10px;
-                            }
-                        }
-                    }
-                    .pagthumb{
-                        gap: 10px;
-                        margin-top: 20px;
-                    }
-                }
-                .product-details_info { 
-                    max-width: 842px;
-                    .info_top { 
-                        gap: 10px;
-                        max-width: 474px;
-                        margin-bottom: 10px;
-                        .manufacturer { 
-                            max-width: 96px;
-                        }
-                        .info_bonus { 
-                            max-width: 328px;
-                            ul { 
-                                li { 
-                                    position: relative;
-                                    display: block;
-                                    list-style: disc;
-                                    p { 
-                                        font-size: 12px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .seasons_wheel_flex { 
-                        margin-bottom: 10px;
-                        gap: 20px;
-                        p { 
-                            gap: 10px;
-                            font-size: 14px;
-                            img{
-                                width: 18px;
-                                height: 18px;
-                            }
-                        }
-                    }
-                    .wheel-reiting { 
-                        p { 
-                            font-size: 26px;          
-                            margin-right: 20px;          
-                        }
-                        .reviews__star { 
-                            width: 18px;
-                            height: 18px;
-                        }
-                    }
-                    h1 { 
-                        font-size: 30px;   
-                        margin-bottom: 10px;          
-                    }
-                    .pricep { 
-                        font-size: 14px;
-                        span { 
-                            font-size: 20px;
-                            margin-left: 3px;
-                        }
-                    }
-                    .typesizep { 
-                        font-size: 14px;
-                        margin: 10px 0;
-                    }
-                    ul { 
-                        margin-left: 0px;
-                        margin-bottom: 10px;
-                        li { 
-                            font-size: 12px;
-                            list-style: none;
-                            text-indent: 0px;                     
-                        }
-                    }
-                    .adreas { 
-                        .adreas_item { 
-                            max-width: 846px;
-                            .adreas_item_title { 
-                                max-width: 62%;
-                                gap: 4px;
-                                padding: 4px 8px;
-                                p { 
-                                    font-size: 12px;                              
-                                }
-                                img { 
-                                    width: 14px;
-                                    height: 14px;
-                                }
-                                span { 
-                                    font-size: 12px;                       
-                                }
-                            }
-                            .adreas_item_hide { 
-                                max-width: 200px;
-                                padding: 20px 10px;
-                                span { 
-                                    gap: 5px;
-                                    font-size: 12px;
-                                    margin-bottom: 10px;
-                                }
-                                .adreas_item_info { 
-                                    p { 
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+    
     .alternative_product { 
         padding: 40px 20px;
         .alternative_product_cont {
@@ -2316,312 +1699,150 @@ button{
             }
         }
     }
-    .size_section { 
+}
+@media(max-width: $md3 + px){   
+    .alternative_product { 
         padding: 40px 20px;
-        .size_container { 
-            .size_cont_inner { 
-                .size_outer { 
-                    .cheak_content { 
-                        label { 
-                            padding: 10px;
-                            span { 
-                                width: 16px;
-                                height: 16px;
-                                margin-right: 4px;
-                                &::before{
-                                    width: 8px;
-                                    height: 8px;
-                                    border-radius: 1px;
+        .alternative_product_cont {
+            .alternative_product_title { 
+                h2 { 
+                    font-size: 28px;
+                    margin-bottom: 30px;
+                }
+                .txt { 
+                    font-size: 18px;
+                    span { 
+                        margin: 0 3px;
+                    }
+                }
+            }
+    
+            .alternative_product_box { 
+                .alternative_product_item { 
+                    padding: 20px 0px;
+                    flex-direction: column;
+                    .img { 
+                        max-width: 310px;
+                        height: 300px;
+                        .svg { 
+                            max-width: 32px;
+                            svg { 
+                                margin-bottom: 10px;
+                            }
+                        }
+                        img { 
+                            height: 300px;
+                        }
+                    }
+    
+                    .text { 
+                        max-width: 900px;
+                        .text_top { 
+                            margin-bottom: 10px;
+                            flex-wrap: wrap;
+                            .brend { 
+                                order: 1;
+                                margin-right: 6px;
+                                svg{
+                                    width: 100%;
+                                    max-width: 80px;
                                 }
                             }
-                            p { 
+                            .bonus { 
+                                max-width: unset;
+                                order: 3;
+                                grid-template-columns: repeat(4, 1fr);
+                                grid-gap: 10px;
+                                margin-top: 20px;
+                                p { 
+                                    font-size: 14px;
+                                    img { 
+                                        min-width: 40px;
+                                        height: 40px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+    
+                            .top_btn { 
+                                max-width: 94px;
+                                order: 2;
+                            }
+                        }
+    
+                        .item_title { 
+                            .shin { 
+                                .stars { 
+                                    max-width: 180px;
+                                    p { 
+                                        font-size: 20px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                                .artikul { 
+                                    font-size: 21px;
+                                }
+                            }
+                            h2 { 
+                                font-size: 30px;
+                                margin-bottom: 10px;
+                            }
+                            .types { 
+                                max-width: 352px;
+                                p { 
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        ul { 
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                            margin-left: 16px;
+                            li { 
                                 font-size: 14px;
                             }
                         }
-                    }
-                    .size_table { 
-                        .size_table_buttons { 
-                            margin-top: 32px;
-                            padding-right: 10px;
-                            .left { 
-                                .sizebtn { 
-                                    padding: 12px 10px;
-                                    font-size: 18px;
+                        .stock { 
+                            font-size: 16px;
+                            svg { 
+                                margin-right: 5px;
+                            }
+                        }
+                        .bottom { 
+                            flex-direction: column;
+                            align-items: flex-start;
+                            margin-top: 10px;
+                            .price { 
+                                max-width: 230px;
+                                margin-bottom: 20px;
+                                p { 
+                                    font-size: 28px;
+                                    margin-right: 10px;
+                                }
+                                span { 
+                                    font-size: 14px;                             
                                 }
                             }
                             .right { 
-                                max-width: 280px;
-                                margin-left: 10px;
-                                .stockbtn { 
-                                    font-size: 16px;
+                                max-width: 530px;
+                                margin-left: 0px;
+                                .counter { 
+                                    max-width: 140px;
                                     span { 
-                                        width: 34px;
-                                        height: 20px;
-                                        margin-right: 10px;
-                                        &::before{
-                                            left: 4px;
-                                            top: 3px;
-                                            width: 12px;
-                                            height: 12px;
-                                        }
-                                    }
-                                    
-                                }
-                                .stockbtn-active{
-                                    span{
-                                        &::before{
-                                            left: 16px;
-                                        }
+                                        margin: 0 5px;
+                                        font-size: 30px;
                                     }
                                 }
-                            }
-                        }
-                        .size_table_box { 
-                            .size_table_box_title { 
-                                padding: 12px 20px;
-                                margin-bottom: 10px;
-                                p { 
+                                .addbasket { 
+                                    max-width: 203px;
+                                    height: 52px;
+                                    font-size: 18px;   
+                                    margin: 0 6px;                         
+                                }
+                                .buy { 
                                     font-size: 18px;
-                                    &:nth-child(1){width: 9.7%;}
-                                    &:nth-child(2){width: 9%;}
-                                    &:nth-child(3){width: 15.25%;}
-                                    &:nth-child(4){width: 15.25%;}
-                                    &:nth-child(5){width: 11.78%;}
-                                    &:nth-child(6){width: 10.4%;}
-                                    &:nth-child(7){width: 10.4%;}
-                                    &:nth-child(8){width: 9.7%;}
-                                }
-                            }
-                            .size_table_box_item { 
-                                padding: 12px 20px;
-                                .left { 
-                                    width: 9.7%;
-                                    .dioametr { 
-                                        font-size: 32px;
-                                    }
-                                }
-                                .childrens { 
-                                    width:  88.9%;
-                                    .child_item { 
-                                        padding: 8px 0;
-                                        margin-bottom: 10px;
-                                        .kod { 
-                                            font-size: 14px;    
-                                            width: 10.14%;                                 
-                                        }
-                                        .tposizep { 
-                                            width: 17.16%;
-                                            font-size: 12px;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .indexp { 
-                                            width: 17.16%;
-                                            font-size: 14px;
-                                        }
-                                        .in_stock,.not_stock { 
-                                            width: 13.26%;
-                                            font-size: 14px;
-                                        }
-                                        .price { 
-                                            width: 11.7%;
-                                            font-size: 14px;                                     
-                                        }
-                                        .counter { 
-                                            width: 10.14%;
-                                            font-size: 14px;
-                                            gap: 6px;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .itogprice { 
-                                            font-size: 14px;
-                                            width: 10.9%;
-                                        }
-                                        .addbasket { 
-                                            width: 9.51%;
-                                            font-size: 12px;
-                                            height: 40px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media(max-width: $md3 + px){   
-    .evakuation_box{
-        position: unset;
-        display: block;
-        max-width: unset;
-        height: 434px;
-        .soc{
-            display: none;
-        }
-        .top{
-            width: 100%;
-            height: 100%;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-    .product-details { 
-        padding: 40px 20px;
-        .product-details_cont { 
-            .product-details_box { 
-                padding: 0;
-                border: unset;
-                gap: 20px;
-                flex-direction: column;
-                .product-details_slider { 
-                    max-width: unset;
-                    .manufacturer { 
-                        display: block;
-                    }
-                    .wheel-reiting { 
-                        display: flex;
-                    }
-                    h1 { 
-                        display: block;
-                    }
-                    .slider_top_flex { 
-                        display: flex;
-                    }
-                    .myswip { 
-                        margin: 0 auto;
-                        margin-bottom: 20px;
-                        .swiper-wrapper {
-                            .swiper-slide { 
-                                .productimg { 
-                                    height: 200px;
-                                    max-width: 160px;
-                                    display: block;
-                                    margin: 0 auto;
-                                }
-                                .seasons_img { 
-                                    width: 32px;
-                                    gap: 10px;
-                                }
-                            }
-                        }
-                    }
-                    .mySwiper { 
-                        display: none;
-                    }
-                    .pagthumb{
-                        gap: 10px;
-                        margin-top: 20px;
-                    }
-                }
-                .product-details_info { 
-                    max-width: unset;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    .info_top { 
-                        gap: 0px;
-                        max-width: unset;
-                        order: 3;
-                        margin-bottom: 0px;
-                        margin-top: 20px;
-                        .manufacturer { 
-                            display: none;
-                        }
-                        .info_bonus { 
-                            max-width: 328px;
-                            ul { 
-                                li { 
-                                    position: relative;
-                                    display: block;
-                                    list-style: disc;
-                                    p { 
-                                        font-size: 12px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .seasons_wheel_flex { 
-                        margin-bottom: 10px;
-                        gap: 10px;
-                        order: 4;
-                        padding: 0 8px;
-                        p { 
-                            gap: 5px;
-                            font-size: 12px;
-                            img{
-                                width: 18px;
-                                height: 18px;
-                            }
-                        }
-                    }
-                    .wheel-reiting,h1,.pricep,.typesizep { 
-                        display: none;
-                    }
-                    ul { 
-                        margin-left: 0px;
-                        margin-bottom: 30px;
-                        order: 1;
-                        li { 
-                            padding: 0 8px;
-                            font-size: 14px;                 
-                        }
-                    }
-                    .adreas { 
-                        order: 2;
-                        .adreas_item { 
-                            max-width: 846px;
-                            .adreas_item_title { 
-                                max-width: 100%;
-                                gap: 4px;
-                                border-radius: 4px 5px 0px 0px;
-                                padding: 4px 8px;
-                                p { 
-                                    font-size: 12px;                              
-                                }
-                                img { 
-                                    width: 14px;
-                                    height: 14px;
-                                }
-                                span { 
-                                    font-size: 12px;                       
-                                }
-                            }
-                            .adreas_item_hide { 
-                                max-width: unset;
-                                position: unset;
-                                height: 0;
-                                border-radius: 0px 0px 4px 4px;
-                                overflow: hidden;
-                                opacity: 1;
-                                margin-top: -4px;
-                                padding: 0px 10px;
-                                span { 
-                                    gap: 5px;
-                                    font-size: 12px;
-                                    margin-bottom: 10px;
-                                    margin-top: 20px;
-                                }
-                                .adreas_item_info { 
-                                    p { 
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
-                            &:hover{
-                                .adreas_item_hide{
-                                    height: 140px;
-                                    margin-bottom: 8px;
+                                    max-width: 168px;
+                                    height: 52px;
                                 }
                             }
                         }
@@ -2632,211 +1853,6 @@ button{
     }
     .addreviews{
         padding: 40px 0 0;
-    }
-    .size_section { 
-        padding: 40px 20px;
-        .size_container { 
-            .size_cont_inner { 
-                .size_outer { 
-                    .cheak_content { 
-                        position: relative;
-                        .setchecktype{
-                            position: absolute;
-                            right: 4px;
-                            top: 10px;
-                            z-index: 2;
-                            display: block;
-                        }
-                        label { 
-                            padding: 16px 10px;
-                            width: 100%;
-                            filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
-                            border-radius: 6px;
-                            display: none;
-                            &:nth-child(2){
-                                display: block;
-                            }
-                            span { 
-                                display: none;
-                            }
-                            p { 
-                                font-family: 'Open Sans Condensed';
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 23px;
-                                line-height: 100%;
-                                text-transform: uppercase;
-                                color: #1E9CDB;                                
-                            }
-                        }
-                    }
-                    .size_table { 
-                        .size_table_buttons { 
-                            margin-top: 20px;
-                            margin-bottom: 20px;
-                            padding-right: 0px;
-                            flex-direction: column-reverse;
-                            background: unset;
-                            gap: 20px;
-                            .select_size{
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                font-family: 'Open Sans Condensed';
-                                font-style: normal;
-                                max-width: 320px;
-                                margin: 0 auto;
-                                font-weight: 700;
-                                font-size: 18px;
-                                width: 100%;
-                                line-height: 120%;
-                                color: #444444;
-                                select{
-                                    font-family: 'Inter';
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    font-size: 17px;
-                                    line-height: 140%;
-                                    color: #0E8ECF;
-                                    padding: 0 10px;
-                                    max-width: 180px;
-                                    width: 100%;
-                                    height: 44px;
-                                    background: #FFFFFF;
-                                    border: 1px solid #DBE2E9;
-                                    box-sizing: border-box;
-                                    border-radius: 4px;
-                                }
-                            }
-                            .left { 
-                                display: none;
-                            }
-                            .right { 
-                                max-width: 280px;
-                                margin-left: 10px;
-                                .stockbtn { 
-                                    font-size: 16px;
-                                    color: #1E9CDB;
-                                    span { 
-                                        width: 34px;
-                                        height: 20px;
-                                        margin-right: 10px;
-                                        border: 1px solid #1E9CDB;
-                                        &::before{
-                                            left: 4px;
-                                            top: 3px;
-                                            width: 12px;
-                                            background: #1E9CDB;
-                                            height: 12px;
-                                        }
-                                    }
-                                    
-                                }
-                                .stockbtn-active{
-                                    span{
-                                        &::before{
-                                            left: 16px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .size_table_box { 
-                            .size_table_box_title { 
-                                display: none;
-                            }
-                            .size_table_box_item { 
-                                padding: 0;
-                                margin-bottom: 20px;
-                                flex-direction: column;
-                                .left { 
-                                    width: 100%;
-                                    margin-bottom: 20px;
-                                    padding: 15px;
-                                    background: #F9F9F9;
-                                    .dioametr { 
-                                        font-size: 25px;
-                                    }
-                                }
-                                .childrens { 
-                                    width:  100%;
-                                    .child_item { 
-                                        background: #FFFFFF;
-                                        border: 1px solid #F4F4F4;
-                                        box-sizing: border-box;
-                                        margin-bottom: 20px;
-                                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
-                                        border-radius: 6px;
-                                        flex-wrap: wrap;
-                                        padding: 15px;
-                                        justify-content: space-between;
-                                        align-items: flex-start;
-                                        position: relative;
-                                        .kod { 
-                                            position: absolute;                                
-                                            right: 15px;
-                                            top: 35px;
-                                            font-size: 12px;
-                                            line-height: 120%;
-                                            width: max-content;
-                                        }
-                                        .tposizep { 
-                                            width: 60%;
-                                            font-size: 12px;
-                                            margin-bottom: 18px;
-                                            order: 1;
-                                            span { 
-                                                font-size: 16px;
-                                            }
-                                        }
-                                        .indexp { 
-                                            display: none;
-                                        }
-                                        .in_stock,.not_stock { 
-                                            width: 37%;
-                                            text-align: right;
-                                            font-size: 14px;
-                                            order: 2;
-                                        }
-                                        .price { 
-                                            width: max-content;
-                                            order: 5;       
-                                            font-weight: 700;
-                                            font-size: 32px;
-                                            line-height: 120%;                           
-                                        }
-                                        .counter { 
-                                            width: 100%;
-                                            font-size: 14px;
-                                            gap: 6px;
-                                            order: 3;
-                                            span { 
-                                                font-size: 14px;
-                                            }
-                                        }
-                                        .itogprice { 
-                                            font-size: 18px;
-                                            width: max-content;
-                                            top: 68px;
-                                            left: 82px;
-                                            order: 4;
-                                            position: absolute;
-                                        }
-                                        .addbasket { 
-                                            width: 100%;
-                                            max-width: 130px;
-                                            font-size: 18px;
-                                            height: 40px;
-                                            order: 7;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 @media(max-width: $md4 + px){
