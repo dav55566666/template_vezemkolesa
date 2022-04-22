@@ -1,12 +1,12 @@
-.typesize { 
+.filter { 
     width: 100%;
     padding: 20px;
     padding-right: 324px;
-	.typesize_cont { 
+	.filter_cont { 
         max-width: 1800px;
         width: 100%;
         margin: 0 auto;
-        .typesize_cont_box{
+        .filter_cont_box{
             max-width: 1442px;
             width: 100%;
             h1 { 
@@ -18,7 +18,7 @@
                 margin-bottom: 20px;
                 color: #444444;
             }
-            .typesize_filter { 
+            .filter_filter { 
                 width: 100%;
                 padding: 40px;
                 border-bottom: 5px solid #0E8ECF;
@@ -240,208 +240,7 @@
                     }
                 }
             }
-            .typesize_grid{
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: stretch;
-                gap: 20px 0px;
-                flex-wrap: wrap;
-                margin-top: 60px;
-            }
         }
-	}
-}
-.whyselect { 
-    width: 100%;
-    padding: 40px 20px 80px;
-    padding-right: 324px;
-	.whyselect_cont { 
-        max-width: 1800px;
-        width: 100%;
-        margin: 0 auto;
-		.whyselect_box { 
-            max-width: 1442px;
-            width: 100%;
-			.whyselect_top { 
-                width: 100%;
-                display: flex;
-                margin-bottom: 80px;
-                justify-content: space-between;
-                align-items: flex-start;
-                gap: 15px;
-				.left { 
-                    max-width: 845px;
-                    width: 100%;
-					h4 { 
-                        font-family: 'Open Sans Condensed';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 32px;
-                        line-height: 100%;
-                        color: #444444;      
-                        margin-bottom: 20px;                 
-					}
-					p { 
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 140%;
-                        color: #444444;
-                        margin-bottom: 10px;
-					}
-					ul { 
-                        margin-left: 20px;
-						li { 
-                            list-style: disc;
-						}
-					}
-				}
-				.right { 
-                    width: 100%;
-                    max-width: 428px;
-					h4 { 
-                        font-family: 'Open Sans Condensed';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 32px;
-                        line-height: 100%;
-                        color: #444444;                        
-					}
-					.sizefle { 
-                        width: 100%;
-                        display: grid;
-                        grid-template-columns: repeat(4, 1fr);
-                        gap: 10px;
-                        margin-bottom: 40px;
-                        margin-top: 20px;
-						a { 
-                            font-family: 'Open Sans Condensed';
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 18px;
-                            line-height: 120%;
-                            color: #1E9CDB;
-						}
-					}
-					p { 
-                        font-family: 'Open Sans Condensed';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 15px;
-                        line-height: 110%;
-                        color: #444444;                        
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        &:nth-child(4){
-                            margin: 26px 0 20px;
-                        }
-						img { 
-                            width: 24px;
-                            height: 24px;
-                            margin-right: 10px;
-						}
-					}
-				}
-                .right_wheel{
-                    max-width: 530px;
-                    width: 100%;
-                    h4{
-                        font-family: 'Open Sans Condensed';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 18px;
-                        line-height: 120%;
-                        color: #444444;       
-                        margin-bottom: 20px;                 
-                    }
-                    p{
-                        font-family: 'Inter';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 120%;
-                        color: #444444;
-                        margin-bottom: 40px;
-                        &:last-child{
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-			}
-			.whyselect_bottom { 
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-                gap: 10px;
-				ul { 
-                    max-width: 260px;
-                    width: 100%;
-					li { 
-                        margin-bottom: 6px;
-						h4 { 
-                            font-family: 'Open Sans Condensed';
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 18px;
-                            line-height: 120%;
-                            color: #444444;  
-                            margin-bottom: 4px;                          
-						}
-                        a{
-                            font-family: 'Roboto';
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 14px;
-                            line-height: 120%;
-                            text-decoration: underline!important;
-                            color: #1E9CDB;
-                        }
-					}
-				}
-				.guarante { 
-                    max-width: 340px;
-                    width: 100%;
-					h3 { 
-                        font-family: 'Open Sans Condensed';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 18px;
-                        line-height: 120%;
-                        text-transform: uppercase;
-                        color: #37A72E;
-                        margin-bottom: 10px;
-					}
-					p { 
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 120%;
-                        margin-bottom: 10px;
-                        color: #444444;
-					}
-					.guarante_flex { 
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: 10px;
-						a { 
-                            width: 100%;
-                            max-width: 96px;
-                            display: block;
-							img { 
-                                width: 100%;
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 }
 .page{
@@ -610,15 +409,15 @@
     }
 }
 @media(max-width: 1300px){
-    .typesize { 
+    .filter { 
         padding: 20px;
-        .typesize_cont { 
-            .typesize_cont_box{
+        .filter_cont { 
+            .filter_cont_box{
                 h1 { 
                     font-size: 40px;
                     margin-bottom: 20px;
                 }
-                .typesize_filter { 
+                .filter_filter { 
                     padding: 20px;
                     label { 
                         select { 
@@ -704,110 +503,20 @@
                         }
                     }
                 }
-                .typesize_grid{
-                    gap: 20px 0px;
-                    margin-top: 60px;
-                }
-            }
-        }
-    }
-    .whyselect { 
-        padding: 40px 20px;
-        .whyselect_cont { 
-            .whyselect_box { 
-                .whyselect_top { 
-                    margin-bottom: 80px;
-                    gap: 15px;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    .left { 
-                        max-width: unset;
-                        h4 { 
-                            font-size: 32px;   
-                            margin-bottom: 20px;                 
-                        }
-                        p { 
-                            font-size: 16px;
-                            margin-bottom: 10px;
-                        }
-                        ul { 
-                            margin-left: 20px;
-                        }
-                    }
-                    .right { 
-                        max-width: 428px;
-                        h4 { 
-                            font-size: 32px;                    
-                        }
-                        .sizefle { 
-                            grid-template-columns: repeat(4, 1fr);
-                            gap: 10px;
-                            margin-bottom: 40px;
-                            margin-top: 20px;
-                            a { 
-                                font-size: 18px;
-                            }
-                        }
-                        p { 
-                            font-size: 15px;
-                            &:nth-child(4){
-                                margin: 26px 0 20px;
-                            }
-                            img { 
-                                width: 24px;
-                                height: 24px;
-                                margin-right: 10px;
-                            }
-                        }
-                    }
-                }
-                .whyselect_bottom { 
-                    gap: 20px;
-                    flex-wrap: wrap;
-                    ul { 
-                        width: 100%;
-                        li { 
-                            h4 { 
-                                font-size: 18px;
-                                margin-bottom: 4px;                          
-                            }
-                            a{
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                    .guarante { 
-                        max-width: 340px;
-                        h3 { 
-                            font-size: 18px;
-                            margin-bottom: 10px;
-                        }
-                        p { 
-                            font-size: 14px;
-                            margin-bottom: 10px;
-                        }
-                        .guarante_flex { 
-                            gap: 10px;
-                            a { 
-                                max-width: 96px;
-                            }
-                        }
-                    }
-                }
             }
         }
     }
 }
 @media(max-width: 600px){
-    .typesize { 
+    .filter { 
         padding: 20px;
-        .typesize_cont { 
-            .typesize_cont_box{
+        .filter_cont { 
+            .filter_cont_box{
                 h1 { 
                     font-size: 30px;
                     margin-bottom: 20px;
                 }
-                .typesize_filter { 
+                .filter_filter { 
                     padding: 20px;
                     label { 
                         select { 
@@ -880,24 +589,7 @@
                         }
                     }
                 }
-                .typesize_grid{
-                    margin-top: 30px;
-                }
             }
         }
-    }
-    .whyselect .whyselect_cont .whyselect_box .whyselect_top .left {
-        h4{
-            font-size: 24px;
-        }
-        p{
-            font-size: 12px;
-        }
-    }
-    .whyselect .whyselect_cont .whyselect_box .whyselect_top .right h4{
-        font-size: 24px;
-    }
-    .whyselect .whyselect_cont .whyselect_box .whyselect_top .right .sizefle a{
-        font-size: 14px;
     }
 }
