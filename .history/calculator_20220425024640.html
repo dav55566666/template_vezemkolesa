@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>Каталог</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="site/assets/template_vlad/css/style.css" type="text/css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+  </head>
+  <body style="background-color: #fff;">
+    <div class="calculator_page">
+      <div class="calculator_cont">
+        <h1>Шинный калькулятор</h1>
+        <div class="calculator_box">
+          <div class="calculator_box_tabs">
+            <button class="setcalkulator active" value="0">Шинный калькулятор</button>
+            <button class="setcalkulator" value="1">Расчет ширины диска</button>
+            <button class="setcalkulator" value="2">Шинный калькулятор — дюймы</button>
+          </div>
+          <div class="calculator_block">
+            <div class="calculator_block_topText">
+              <p>С помощью шинного калькулятора вы легко можете посчитать, как изменятся: внешние размеры колеса, высота дорожного просвета (клиренс), показания спидометра и другие характеристики, при установке шин с другим типоразмером на ваш автомобиль.</p>
+              <p>Все размеры шин калькулятор рассчитывает в миллиметрах, а скорость автомобиля в км/ч. Также калькулятор поможет рассчитать необходимую ширину диска для определенного размера шины</p>
+            </div>
+            <div class="calculator_block_selects">
+              <div class="selects_item">
+                <p>Старый размер:</p>
+                <div class="selects_item_flex">
+                  <label for="select1">
+                    <select name="select1" id="select1">
+                      <option value="195">195</option>
+                      <option value="195">195</option>
+                      <option value="195">195</option>
+                      <option value="195">195</option>
+                    </select>
+                  </label>
+                  <label for="select2">
+                    <select name="select2" id="select2">
+                      <option value="65">65</option>
+                      <option value="65">65</option>
+                      <option value="65">65</option>
+                      <option value="65">65</option>
+                      <option value="65">65</option>
+                      <option value="65">65</option>
+                    </select>
+                  </label>
+                  <label for="select3">
+                    <select name="select3" id="select3">
+                      <option value="15">15</option>
+                      <option value="15">15</option>
+                      <option value="15">15</option>
+                      <option value="15">15</option>
+                      <option value="15">15</option>
+                      <option value="15">15</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="selects_item">
+                <p>Новый размер:</p>
+                <div class="selects_item_flex">
+                  <label for="select4">
+                    <select name="select4" id="select4">
+                      <option value="205">205</option>
+                      <option value="205">205</option>
+                      <option value="205">205</option>
+                      <option value="205">205</option>
+                      <option value="205">205</option>
+                    </select>
+                  </label>
+                  <label for="select5">
+                    <select name="select5" id="select5">
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                    </select>
+                  </label>
+                  <label for="select6">
+                    <select name="select6" id="select6">
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <label for="sendbtn1" class="sendbtn">
+                <input type="submit" value="Рассчитать" id="sendbtn1">
+              </label>
+            </div>
+            <div class="calculator_block_info">
+              <div class="info_table">
+                <div class="table">
+                  <div class="th">
+                    <p>Размеры</p>
+                    <p>Старый (мм)</p>
+                    <p>Новый (мм)</p>
+                    <p>Сравнение (разница в мм)</p>
+                  </div>
+                  <div class="tr">
+                    <p>
+                      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="21" height="21" rx="4" fill="#F13E3E"/>
+                        <path d="M7.90554 16H4.49645L8.33736 4.36364H12.6555L16.4964 16H13.0874L10.5419 7.56818H10.451L7.90554 16ZM7.26918 11.4091H13.6783V13.7727H7.26918V11.4091Z" fill="white"/>
+                      </svg>
+                      Ширина шины, мм                         
+                    </p>
+                    <p>195</p>
+                    <p>205</p>
+                    <p>+10</p>
+                  </div>
+                  <div class="tr">
+                    <p>
+                      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="21" height="21" rx="4" fill="#424FAC"/>
+                        <path d="M5.90625 16V4.36364H10.9517C11.8381 4.36364 12.5824 4.48295 13.1847 4.72159C13.7907 4.96023 14.2472 5.29735 14.554 5.73295C14.8646 6.16856 15.0199 6.68182 15.0199 7.27273C15.0199 7.70076 14.9252 8.09091 14.7358 8.44318C14.5502 8.79545 14.2888 9.09091 13.9517 9.32955C13.6146 9.56439 13.2206 9.72727 12.7699 9.81818V9.93182C13.2699 9.95076 13.7244 10.0777 14.1335 10.3125C14.5426 10.5436 14.8684 10.8636 15.1108 11.2727C15.3532 11.678 15.4744 12.1553 15.4744 12.7045C15.4744 13.3409 15.3078 13.9072 14.9744 14.4034C14.6449 14.8996 14.1752 15.2898 13.5653 15.5739C12.9555 15.858 12.2282 16 11.3835 16H5.90625ZM9.06534 13.4773H10.5426C11.0729 13.4773 11.4706 13.3788 11.7358 13.1818C12.0009 12.9811 12.1335 12.6856 12.1335 12.2955C12.1335 12.0227 12.071 11.7917 11.946 11.6023C11.821 11.4129 11.643 11.2689 11.4119 11.1705C11.1847 11.072 10.91 11.0227 10.5881 11.0227H9.06534V13.4773ZM9.06534 9.06818H10.3608C10.6373 9.06818 10.8816 9.02462 11.0938 8.9375C11.3059 8.85038 11.4706 8.72538 11.5881 8.5625C11.7093 8.39583 11.7699 8.19318 11.7699 7.95455C11.7699 7.5947 11.6411 7.32008 11.3835 7.13068C11.1259 6.9375 10.8002 6.84091 10.4062 6.84091H9.06534V9.06818Z" fill="white"/>
+                      </svg>
+                      Высота профиля, мм 	                        
+                    </p>
+                    <p>127</p>
+                    <p>113</p>
+                    <p>-14</p>
+                  </div>
+                  <div class="tr">
+                    <p>
+                      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="21" height="21" rx="4" fill="#44962C"/>
+                        <path d="M15.9652 8.72727H12.7607C12.7379 8.46212 12.6773 8.22159 12.5788 8.00568C12.4841 7.78977 12.3516 7.60417 12.1811 7.44886C12.0144 7.28977 11.8118 7.16856 11.5732 7.08523C11.3345 6.99811 11.0637 6.95455 10.7607 6.95455C10.2304 6.95455 9.78149 7.08333 9.41406 7.34091C9.05043 7.59848 8.77391 7.9678 8.58452 8.44886C8.39891 8.92992 8.30611 9.50758 8.30611 10.1818C8.30611 10.8939 8.4008 11.4905 8.5902 11.9716C8.78338 12.4489 9.06179 12.8087 9.42543 13.0511C9.78906 13.2898 10.2266 13.4091 10.7379 13.4091C11.0296 13.4091 11.291 13.3731 11.522 13.3011C11.7531 13.2254 11.9538 13.1174 12.1243 12.9773C12.2947 12.8371 12.433 12.6686 12.5391 12.4716C12.6489 12.2708 12.7228 12.0455 12.7607 11.7955L15.9652 11.8182C15.9273 12.3106 15.7891 12.8125 15.5504 13.3239C15.3118 13.8314 14.9728 14.3011 14.5334 14.733C14.0978 15.161 13.558 15.5057 12.9141 15.767C12.2701 16.0284 11.522 16.1591 10.6697 16.1591C9.60156 16.1591 8.64323 15.9299 7.79474 15.4716C6.95005 15.0133 6.28149 14.339 5.78906 13.4489C5.30043 12.5587 5.05611 11.4697 5.05611 10.1818C5.05611 8.88636 5.30611 7.79545 5.80611 6.90909C6.30611 6.01894 6.98035 5.34659 7.82884 4.89205C8.67732 4.43371 9.62429 4.20455 10.6697 4.20455C11.4046 4.20455 12.0807 4.30492 12.6982 4.50568C13.3156 4.70644 13.8572 5 14.3232 5.38636C14.7891 5.76894 15.1641 6.24053 15.4482 6.80114C15.7322 7.36174 15.9046 8.00379 15.9652 8.72727Z" fill="white"/>
+                      </svg>
+                      Внутренний диаметр, мм                        
+                    </p>
+                    <p>381</p>
+                    <p>406</p>
+                    <p>+25</p>
+                  </div>
+                  <div class="tr">
+                    <p>
+                      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="21" height="21" rx="4" fill="#D27A29"/>
+                        <path d="M9.86009 16H5.38281V4.36364H9.81463C11.0116 4.36364 12.0457 4.59659 12.9169 5.0625C13.7919 5.52462 14.4661 6.19129 14.9396 7.0625C15.4169 7.92992 15.6555 8.9697 15.6555 10.1818C15.6555 11.3939 15.4188 12.4356 14.9453 13.3068C14.4718 14.1742 13.8014 14.8409 12.9339 15.3068C12.0665 15.7689 11.0419 16 9.86009 16ZM8.5419 13.3182H9.74645C10.3222 13.3182 10.8127 13.2254 11.218 13.0398C11.6271 12.8542 11.9377 12.5341 12.1499 12.0795C12.3658 11.625 12.4737 10.9924 12.4737 10.1818C12.4737 9.37121 12.3639 8.73864 12.1442 8.28409C11.9283 7.82954 11.6101 7.50947 11.1896 7.32386C10.773 7.13826 10.2616 7.04545 9.65554 7.04545H8.5419V13.3182Z" fill="white"/>
+                      </svg>
+                      Внешний диаметр, мм 	                        
+                    </p>
+                    <p>635</p>
+                    <p>632</p>
+                    <p>-3</p>
+                  </div>
+                </div>
+                <div class="info_table_img">
+                  <img src="img/calcimg.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="calculator_block_bottom">
+              <div class="bottomcalc">
+                <div class="calc">
+                  <div class="calc_top">
+                    <div class="calc_top_left">
+                      <h4>Спидометр</h4>
+                      <div class="calc_top_flex">
+                        <div class="calc_top_item">
+                          <p>Показания спидометра</p>
+                          <img src="img/spped.png" alt="">
+                        </div>
+                        <div class="calc_top_item">
+                          <p>Реальная скорость</p>
+                          <img src="img/spped.png" alt="">
+                        </div>
+                      </div>
+                      <div class="calc_bottom">
+                        <p>Показания спидометра (км/ч)	
+                          <span>90</span>
+                        </p>
+                        <p>Реальная скорость (км/ч)	
+                          <span>89.6</span>
+                        </p>
+                        <p>Разницы (км/ч)	
+                          <span>–0.43</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="calc_top_right">
+                      <h4>Клиренс</h4>
+                      <p>Изменение клиренса, мм
+                        <span>–1.5</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator_block_attention">
+              <span>Внимание!</span>
+              <p>1. Установка нестандартных типоразмеров может привести к ухудшению характеристик автомобиля и разрушению самой шины!</p>
+              <p>2. Диски меньшего диаметра, чем те, что установлены сейчас, могут не подойти к вашему авто, поскольку тормозная система (суппорт) может упираться во внутреннюю часть диска.</p>
+            </div>
+          </div>
+          <div class="calculator_block">
+            <div class="calculator_block_topText">
+              <p>При подборе дисков для вашего автомобиля необходимо точно знать минимальную и максимальную ширину диска подходящую для данного типоразмера шины. Для расчета ширины диска вы можете воспользоваться этим разделом шинного калькулятора</p>
+            </div>
+            <div class="calculator_block_selects">
+              <div class="selects_item">
+                <p>Введите типоразмер:</p>
+                <div class="selects_item_flex">
+                  <label for="select4">
+                    <select name="select4" id="select4">
+                      <option value="205">205</option>
+                      <option value="205">205</option>
+                      <option value="205">205</option>
+                      <option value="205">205</option>
+                      <option value="205">205</option>
+                    </select>
+                  </label>
+                  <label for="select5">
+                    <select name="select5" id="select5">
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                      <option value="55">55</option>
+                    </select>
+                  </label>
+                  <label for="select6">
+                    <select name="select6" id="select6">
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                      <option value="16">16</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <label for="sendbtn1" class="sendbtn">
+                <input type="submit" value="Рассчитать" id="sendbtn1">
+              </label>
+            </div>
+            <div class="calculator_block_parrams">
+              <div class="parrams_left">
+                <h4>Параметры диска</h4>
+                <p>Диаметр диска, дюймы	
+                  <span>15</span>
+                </p>
+                <p>Минимальная ширина диска, дюймы	
+                  <span>5.5</span>
+                </p>
+                <p>Максимальная ширина диска, дюймы	
+                  <span>7</span>
+                </p>
+              </div>
+              <div class="parrams_right">
+                <h4>Внимание!</h4>
+                <p>Установка слишком узких или слишком широких дисков приведет к деформации шины, ухудшению ее эксплуатационных характеристик, а также к повышенному износу.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="site/assets/js/select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+  </body>
+</html>

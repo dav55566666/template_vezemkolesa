@@ -1,0 +1,169 @@
+@import "forms";
+@import "vars";
+.calculator_page { 
+
+	.calculator_cont { 
+
+		h1 { 
+
+		}
+
+		.calculator_box { 
+
+			.calculator_box_tabs { 
+
+				.setcalkulator { 
+
+				}
+			}
+
+			.calculator_block { 
+                display: none;
+                &:nth-child(2){
+                    display: block;
+                }
+				.calculator_block_topText { 
+
+					p { 
+
+					}
+				}
+
+				.calculator_block_selects { 
+
+					.selects_item { 
+
+						p { 
+
+						}
+
+						.selects_item_flex { 
+
+							label { 
+
+								#select1 { 
+
+								}
+							}
+						}
+					}
+
+					.sendbtn { 
+
+						#sendbtn1 { 
+
+						}
+					}
+				}
+
+				.calculator_block_info { 
+
+					.info_table { 
+
+						.table { 
+
+							.th { 
+
+								p { 
+
+								}
+							}
+
+							.tr { 
+
+								p { 
+
+									svg { 
+
+										rect { 
+
+										}
+
+										path { 
+
+										}
+									}
+								}
+							}
+						}
+
+						.info_table_img { 
+
+							img { 
+
+							}
+						}
+					}
+				}
+
+				.calculator_block_bottom { 
+
+					.bottomcalc { 
+
+						.calc { 
+
+							.calc_top { 
+
+								.calc_top_left { 
+
+									h4 { 
+
+									}
+
+									.calc_top_flex { 
+
+										.calc_top_item { 
+
+											p { 
+
+											}
+
+											img { 
+
+											}
+										}
+									}
+
+									.calc_bottom { 
+
+										p { 
+
+											span { 
+
+											}
+										}
+									}
+								}
+
+								.calc_top_right { 
+
+									h4 { 
+
+									}
+
+									p { 
+
+										span { 
+
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.calculator_block_attention { 
+
+					span { 
+
+					}
+
+					p { 
+
+					}
+				}
+			}
+		}
+	}
+}
