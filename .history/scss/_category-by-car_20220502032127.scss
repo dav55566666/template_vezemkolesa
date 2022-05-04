@@ -720,7 +720,6 @@
         padding: 40px 20px 60px;
         .help_select_cont { 
             .help_select_box { 
-                padding: 40px 30px;
                 .help_select_box_text { 
                     max-width: 465px;
                     h2 { 
@@ -731,10 +730,6 @@
                     }
                     form { 
                         margin: 16px 0 22px;
-                        flex-direction: column;
-                        gap: 10px;
-                        justify-content: flex-start;
-                        align-items: flex-start;
                         .inptext { 
                             max-width: 228px;
                             #phoneinput { 
@@ -756,7 +751,7 @@
                     }
                 }
                 .help_select_box_img { 
-                    display: none;
+                    max-width: 525px;
                 }
             }
         }

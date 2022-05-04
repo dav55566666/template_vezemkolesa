@@ -8,17 +8,12 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="site/assets/template_vlad/css/style.css" type="text/css" >
   </head>
-  <body style="background-color: #fff;" >
+  <body style="background-color: #fff;">
     <div class="calculator_page">
       <div class="calculator_cont">
         <h1 class="calculator_title">Шинный калькулятор</h1>
         <div class="calculator_box">
           <div class="calculator_box_tabs">
-            <select class="calculator_box_tabs_select">
-              <option value="0">Шинный калькулятор</option>
-              <option value="1">Расчет ширины диска</option>
-              <option value="2">Шинный калькулятор — дюймы</option>
-            </select>
             <button class="setcalkulator active" value="0">Шинный калькулятор</button>
             <button class="setcalkulator" value="1">Расчет ширины диска</button>
             <button class="setcalkulator" value="2">Шинный калькулятор — дюймы</button>
@@ -199,22 +194,6 @@
                         <span>–1.5</span>
                       </p>
                     </div>
-                  </div>
-                  <div class="calc_mobile">
-                    <h4 class="calc_mobile_name">Спидометр</h4>
-                    <p class="calc_mobile_item">Показания спидометра (км/ч)	
-                      <input type="text" placeholder="90">
-                    </p>
-                    <p class="calc_mobile_item">Реальная скорость (км/ч)	
-                      <span class="calc_mobile_item_text">89.57</span>
-                    </p>
-                    <p class="calc_mobile_item">Разницы (км/ч)	
-                      <span class="calc_mobile_item_text">–0.43</span>
-                    </p>
-                    <h4 class="calc_mobile_name">Клиренс</h4>
-                    <p class="calc_mobile_item">Изменение клиренса, мм
-                      <span class="calc_mobile_item_text">–1.5</span>
-                    </p>
                   </div>
                 </div>
               </div>
@@ -536,7 +515,7 @@
         </div>
       </div>
     </div>
-    <div class="evakuation_box calculator_evakuation_box">
+    <div class="evakuation_box">
       <div class="top">
         <img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@1x.jpg" alt="">
         <div class="text">
@@ -687,12 +666,6 @@
     <script>
       var calc_block = $(".calculator_block")
       $(".setcalkulator").click(function(){
-        $(".setcalkulator").removeClass("active")
-        $(this).addClass("active")
-        $(calc_block).hide()
-        $(calc_block[$(this).val()]).show()
-      })
-      $(".calculator_box_tabs_select").on('change',function(){
         $(".setcalkulator").removeClass("active")
         $(this).addClass("active")
         $(calc_block).hide()

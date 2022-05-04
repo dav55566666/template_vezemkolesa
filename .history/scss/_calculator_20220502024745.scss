@@ -17,9 +17,6 @@
             margin-bottom: 20px;
             color: #444444;            
 		}
-        .calc_mobile{
-            display: none;
-        }
 		.calculator_box { 
             max-width: 1442px;
             width: 100%;
@@ -1034,9 +1031,6 @@
             }
         }
     }
-    .calculator_evakuation_box{
-        display: none!important;
-    }
 }
 @media(max-width: $md3 + px){
     .calculator_page { 
@@ -1119,47 +1113,30 @@
                         }
                     }
                     .calculator_block_info { 
-                        padding: 0 0px;
+                        padding: 0 20px;
                         .info_table { 
                             gap: 10px;
-                            flex-wrap: wrap-reverse;
                             .table { 
                                 max-width: 980px;
-                                padding-top: 100px;
-                                position: relative;
                                 .th { 
                                     gap: 4px;
                                     margin-bottom: 14px;
                                     .table_th_name { 
                                         max-width: 212px;
                                         font-size: 14px;
-                                        color: #949DA7;
                                         &:first-child{
                                             max-width: 250px;
-                                            position: absolute;
-                                            left: 0;
-                                            top: 50px;
-                                            font-family: 'Open Sans Condensed';
-                                            font-style: normal;
-                                            font-weight: 700;
-                                            font-size: 25px;
-                                            line-height: 100%;
-                                            color: #1E9CDB;
                                         }
                                     }
                                 }
                                 .tr { 
                                     gap: 4px;
                                     margin-bottom: 14px;
-                                    flex-wrap: wrap;
                                     .table_tr_name { 
                                         font-size: 12px;
                                         max-width: 212px;
-                                        width: 32%;
                                         &:first-child{
-                                            max-width: unset;
-                                            width: 100%;
-                                            margin-bottom: 10px;
+                                            max-width: 250px;
                                         }
                                     }
                                 }
@@ -1175,89 +1152,68 @@
                     }
                     .calculator_block_bottom { 
                         max-width: 980px;
-                        padding: 0 0px;
-                        margin-top: 40px;
-                        margin-bottom: 20px;
+                        padding: 0 20px;
                         .bottomcalc { 
                             .calc { 
-                                .calc_mobile { 
-                                    display: block;
-                                    width: 100%;
-                                    padding: 30px 20px;
-                                    background: #F9F9F9;
-                                    border-radius: 6px;
-                                    .calc_mobile_name { 
-                                        font-family: 'Open Sans Condensed';
-                                        font-style: normal;
-                                        font-weight: 700;
-                                        font-size: 25px;
-                                        line-height: 100%;
-                                        color: #0E8ECF;
-                                        margin-bottom: 20px;
-                                    }
-                                
-                                    .calc_mobile_item { 
-                                        margin-bottom: 14px;
-                                        width: 100%;
-                                        font-family: 'Inter';
-                                        font-style: normal;
-                                        font-weight: 700;
-                                        font-size: 16px;
-                                        line-height: 110%;
-                                        color: #444444;
-                                        input { 
-                                            width: 100%;
-                                            height: 30px;
-                                            max-width: 185px;
-                                            background: #FFFFFF;
-                                            font-family: 'Inter';
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            font-size: 16px;
-                                            line-height: 120%;
-                                            color: #444444;
-                                            border: 1px solid #DBE2E9;
-                                            box-sizing: border-box;
-                                            border-radius: 4px;
-                                            padding: 0 10px;
-                                            margin-top: 10px;
-                                            display: block;
-                                        }
-                                        span{
-                                            display: block;
-                                            margin-top: 10px;
-                                            font-family: 'Inter';
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            font-size: 16px;
-                                            line-height: 120%;
-                                            color: #444444;
-                                        }
-                                    }
-                                }
                                 .calc_top { 
-                                    display: none;
+                                    .calc_top_left { 
+                                        max-width: 460px;
+                                        .calc_top_left_name { 
+                                            font-size: 16px;
+                                            margin-bottom: 20px;
+                                        }
+                                        .calc_top_flex { 
+                                            gap: 10px;
+                                            margin-bottom: 10px;
+                                            .calc_top_item { 
+                                                max-width: 210px;
+                                                .calc_top_item_text { 
+                                                    font-size: 16px;
+                                                    margin-bottom: 10px;
+                                                }   
+                                            }
+                                        }
+                                        .calc_bottom { 
+                                            max-width: 460px;
+                                            .calc_bottom_name { 
+                                                font-size: 14px;
+                                                span { 
+                                                    max-width: 185px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .calc_top_right { 
+                                        max-width: 378px;
+                                        .calc_top_right_name { 
+                                            font-size: 16px;
+                                            margin-bottom: 20px;
+                                        }
+                                        .calc_top_right_text { 
+                                            font-size: 12px;
+                                            span { 
+                                                max-width: 185px;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
                     .calculator_block_attention { 
                         margin-top: 30px;
-                        padding: 0 0px;
-                        flex-direction: column;
+                        padding: 0 40px;
                         .calculator_block_attention_name { 
-                            font-size: 25px;
-                            margin-bottom: 14px;
+                            font-size: 30px;
                         }
     
                         .calculator_block_attention_name_text { 
-                            font-size: 14px;
-                            margin-bottom: 14px;
-                            max-width: unset;
+                            font-size: 16px;
+                            max-width: 512px;
                         }
                     }
                     .calculator_block_parrams { 
-                        padding: 0 0px;
+                        padding: 0 40px;
                         margin-bottom: 20px;
                         .parrams_left { 
                             max-width: 582px;
@@ -1311,13 +1267,11 @@
         padding: 0 20px;
         .selects_whell_cont { 
             .selects_whell_top { 
-                padding: 40px 30px;
-                gap: 0px;
+                padding: 20px;
+                gap: 40px;
                 margin-bottom: 40px;
-                flex-direction: column;
                 .selects_whell_top_title { 
-                    font-size: 25px;
-                    margin-bottom: 20px;
+                    font-size: 24px;
                 }
                 .selects_whell_top_button { 
                     max-width: 180px;
@@ -1326,9 +1280,8 @@
                 }
             }
             .selects_whell_flex { 
-                gap: 20px;
-                padding: 0 0px;
-                flex-direction: column;
+                gap: 15px;
+                padding: 0 20px;
                 .selects_whell_flex_title{
                     font-size: 14px;
                     margin-bottom: 14px;
@@ -1347,7 +1300,7 @@
                 }
                 .selects_whell_right { 
                     .selects_whell_right_flex { 
-                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-columns: repeat(3, 1fr);
                         grid-gap: 10px;
                         .selects_whell_right_flex_text { 
                             font-size: 14px;                       
@@ -1362,8 +1315,7 @@
         .similar_sizes_cont { 
             .similar_sizes_box { 
                 padding-top: 44px;
-                gap: 20px;
-                flex-direction: column-reverse;
+                gap: 15px;
                 .similar_sizes_table { 
                     .select_size { 
                         .selectsizebtn { 
@@ -1374,20 +1326,10 @@
                     .table_th { 
                         padding: 12px 20px;
                         .table_th_text { 
-                            max-width: 112px;
+                            max-width: 190px;
                             font-size: 14px; 
-                            padding: 0;
-                            padding-left: 14px;
-                            width: 100%;
-                            &:first-child{
-                                padding-left: 0;
-                                padding-right: 9px;
-                            }
-                            &:nth-child(2){max-width: 96px;}                   
-                            &:nth-child(3),&:nth-child(4),&:nth-child(5){max-width: 96px;}     
-                            &:nth-child(4),&:nth-child(5){
-                                display: none;
-                            }   
+                            &:nth-child(2){max-width: 170px;}                   
+                            &:nth-child(3),&:nth-child(4),&:nth-child(5){max-width: 160px;}     
                         }
                     } 
                     .table_tr { 
@@ -1396,41 +1338,28 @@
                             gap: 10px;
                             margin-bottom: 10px;
                             .table_tr_item_name { 
-                                max-width: 112px;
+                                max-width: 190px;
                                 font-size: 14px; 
-                                padding: 0;
-                                width: 100%;
-                                padding-left: 14px;
-                                &:first-child{
-                                    padding-left: 0;
-                                    padding-right: 9px;
-                                }
-                                &:nth-child(2){max-width: 96px; text-align: left;}                   
-                                &:nth-child(3){max-width: 96px; text-align: left;}    
-                                &:nth-child(4),&:nth-child(5){
-                                    display: none;
-                                }                           
+                                &:nth-child(2){max-width: 170px; text-align: center;}                   
+                                &:nth-child(3){max-width: 160px; text-align: center;}                               
                             }
     
                             .table_tr_item_kol { 
-                                width: 100%;
-                                text-align: left;
-                                &:nth-child(3){max-width: 96px; text-align: left;}  
-                                padding-left: 14px;
-                                &:nth-child(4){
-                                    display: none;
-                                }   
+                                max-width: 160px;
+                                font-size: 14px;
                             }
                             .compare_btn { 
-                                display: none;                     
+                                max-width: 140px;
+                                height: 40px;
+                                font-size: 14px;                         
                             }
                         }
                     }
                 }
                 .similar_sizes_text { 
-                    max-width: unset;
+                    max-width: 240px;
                     .similar_sizes_text_title { 
-                        font-size: 25px;   
+                        font-size: 24px;   
                         margin-bottom: 20px;               
                     }
                     .similar_sizes_text_description { 

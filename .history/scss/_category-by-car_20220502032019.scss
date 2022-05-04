@@ -701,14 +701,24 @@
                 margin-bottom: 40px;
             }
             .search_result_swiper{
-                display: block;
-                margin-bottom: 20px;
-                .swiper-slide{
-                    max-width: 250px;
+                display: none;
+            }
+            ul { 
+                li { 
+                    h4 { 
+                        font-size: 22px;
+                        margin-bottom: 16px;                   
+                    }
+                    a{
+                        font-size: 16px;
+                        margin-bottom: 10px;   
+                    }
                 }
             }
             .search_result_grid { 
-                display: none;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 48px;
+                margin-bottom: 20px;
                 
             }
             .showall { 
@@ -720,7 +730,6 @@
         padding: 40px 20px 60px;
         .help_select_cont { 
             .help_select_box { 
-                padding: 40px 30px;
                 .help_select_box_text { 
                     max-width: 465px;
                     h2 { 
@@ -731,10 +740,6 @@
                     }
                     form { 
                         margin: 16px 0 22px;
-                        flex-direction: column;
-                        gap: 10px;
-                        justify-content: flex-start;
-                        align-items: flex-start;
                         .inptext { 
                             max-width: 228px;
                             #phoneinput { 
@@ -756,13 +761,13 @@
                     }
                 }
                 .help_select_box_img { 
-                    display: none;
+                    max-width: 525px;
                 }
             }
         }
     }
 }
-@media(max-width: 768px){
+@media(max-width: 600px){
     .filter { 
         padding: 20px;
         .filter_cont { 

@@ -264,7 +264,7 @@
             display: none;
             ul{
                 max-width: 250px;
-
+                
             }
         }
         ul { 
@@ -584,7 +584,7 @@
                 max-width: 525px;
                 width: 100%;
 				img { 
-                    width: 100%;
+
 				}
 			}
 		}
@@ -693,76 +693,8 @@
             }
         }
     }
-    .search_result { 
-        padding: 20px;
-        .search_result_cont { 
-            h2{
-                font-size: 32px;
-                margin-bottom: 40px;
-            }
-            .search_result_swiper{
-                display: block;
-                margin-bottom: 20px;
-                .swiper-slide{
-                    max-width: 250px;
-                }
-            }
-            .search_result_grid { 
-                display: none;
-                
-            }
-            .showall { 
-                font-size: 18px;
-            }
-        }
-    }
-    .help_select { 
-        padding: 40px 20px 60px;
-        .help_select_cont { 
-            .help_select_box { 
-                padding: 40px 30px;
-                .help_select_box_text { 
-                    max-width: 465px;
-                    h2 { 
-                        font-size: 32px;
-                    }
-                    p { 
-                        font-size: 18px;
-                    }
-                    form { 
-                        margin: 16px 0 22px;
-                        flex-direction: column;
-                        gap: 10px;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        .inptext { 
-                            max-width: 228px;
-                            #phoneinput { 
-                                height: 40px;
-                                font-size: 17px;                         
-                            }
-                        }
-                        .inpbtn { 
-                            max-width: 228px;
-                            #sendphoneinp { 
-                                height: 40px;
-                                font-size: 18px;
-                            }
-                        }
-                    }
-    
-                    a { 
-                        font-size: 18px;
-                    }
-                }
-                .help_select_box_img { 
-                    display: none;
-                }
-            }
-        }
-    }
 }
-@media(max-width: 768px){
+@media(max-width: 600px){
     .filter { 
         padding: 20px;
         .filter_cont { 

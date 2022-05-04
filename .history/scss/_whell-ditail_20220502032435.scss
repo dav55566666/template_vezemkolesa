@@ -131,114 +131,89 @@
 }
 @media(max-width: 1300px){
     .whell-detail { 
-        padding: 40px 20px;
-        .whell-detail_cont { 
-            h1 { 
-                font-size: 26px;
-                margin-bottom: 40px;       
-            }
-            .whell-detail_flex { 
-                flex-wrap: wrap;
-                gap: 30px 16px;
-                .whell-detail_img { 
-                    max-width: 26%;
-                    p { 
-                        font-size: 18px;
-                    }
-                }
-                .whell_type { 
-                    max-width: 70%;
-                    gap: 10px;
-                    .whell_type_box { 
-                        max-width: 256px;
-                        h4 { 
-                            font-size: 18px;
-                            margin-bottom: 26px;
-                        }
-                        .whell_type_item { 
-                            margin-bottom: 20px;
-                            p { 
-                                font-size: 18px;
-                                img { 
-                                    width: 24px;
-                                    height: 24px;
-                                }
-                            }
-                            a { 
-                                width: 32px;
-                                height: 32px;
-                            }
-                        }
-                    }
-                }
-    
-                .message { 
-                    max-width: unset;
-                    padding: 20px 20px;
-                    p { 
-                        font-size: 14px;
-                        margin-bottom: 20px;
-                    }
-                    a { 
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
+        padding: 40px 20px;=
     }
 }
 @media(max-width: 768px){
-    .whell-detail { 
-        padding: 40px 20px;
-        .whell-detail_cont { 
-            h1 { 
-                font-size: 26px;
-                margin-bottom: 40px;       
-            }
-            .whell-detail_flex { 
-                flex-wrap: wrap;
-                gap: 30px 16px;
-                .whell-detail_img { 
-                    max-width: 100%;
-                    p { 
-                        font-size: 18px;
-                    }
+    .filter { 
+        padding: 20px;
+        .filter_cont { 
+            .filter_cont_box{
+                h1 { 
+                    font-size: 30px;
+                    margin-bottom: 20px;
                 }
-                .whell_type { 
-                    max-width: 100%;
-                    gap: 10px;
-                    .whell_type_box { 
-                        max-width: 256px;
-                        h4 { 
-                            font-size: 18px;
-                            margin-bottom: 26px;
+                .filter_filter { 
+                    padding: 20px;
+                    label { 
+                        select { 
+                            height: 40px;
+                            padding: 0 10px;
+                            font-size: 16px;
                         }
-                        .whell_type_item { 
-                            margin-bottom: 20px;
-                            p { 
-                                font-size: 18px;
-                                img { 
-                                    width: 24px;
-                                    height: 24px;
+                    }
+                    .filter_top { 
+                        gap: 10px;
+                        margin-bottom: 20px;
+                        flex-wrap: wrap;
+                        label { 
+                            max-width: 100%;
+                            select { 
+                                height: 40px;
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                    .filter_central { 
+                        .filter_central_left { 
+                            flex-direction: column;
+                            align-items: flex-start;
+                            .seasons_btn { 
+                                font-size: 16px;
+                            }
+                        }
+                        .filter_central_right { 
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                    }
+                    .filter_bottom { 
+                        gap: 20px;
+                        flex-wrap: wrap;
+                        label { 
+                            max-width: unset;
+                            font-size: 14px; 
+                            flex-direction: column;                  
+                            align-items: flex-start;
+                            select { 
+                                margin-left: 0px;
+                                margin-top: 10px;
+                                max-width: unset;
+                            }
+                        }
+                        .filter_bottom_right { 
+                            max-width: 550px;
+                            gap: 10px;
+                            flex-wrap: wrap;
+                            .sort { 
+                                max-width: 338px;
+                                gap: 10px;
+                                label { 
+                                    max-width: 292px;
+                                    select { 
+                                        max-width: unset;
+                                    }
+                                }
+                                .sortbtn { 
+                                    display: none;
                                 }
                             }
-                            a { 
-                                width: 32px;
-                                height: 32px;
+                            .showtype { 
+                                max-width: 150px;
+                                gap: 10px;
+                                font-size: 17px;
                             }
                         }
-                    }
-                }
-    
-                .message { 
-                    max-width: unset;
-                    padding: 20px 20px;
-                    p { 
-                        font-size: 14px;
-                        margin-bottom: 20px;
-                    }
-                    a { 
-                        font-size: 18px;
                     }
                 }
             }

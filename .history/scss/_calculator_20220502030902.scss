@@ -1378,13 +1378,12 @@
                             font-size: 14px; 
                             padding: 0;
                             padding-left: 14px;
-                            width: 100%;
                             &:first-child{
                                 padding-left: 0;
                                 padding-right: 9px;
                             }
-                            &:nth-child(2){max-width: 96px;}                   
-                            &:nth-child(3),&:nth-child(4),&:nth-child(5){max-width: 96px;}     
+                            &:nth-child(2){max-width: 91px;}                   
+                            &:nth-child(3),&:nth-child(4),&:nth-child(5){max-width: 91px;}     
                             &:nth-child(4),&:nth-child(5){
                                 display: none;
                             }   
@@ -1399,24 +1398,19 @@
                                 max-width: 112px;
                                 font-size: 14px; 
                                 padding: 0;
-                                width: 100%;
                                 padding-left: 14px;
                                 &:first-child{
                                     padding-left: 0;
                                     padding-right: 9px;
                                 }
-                                &:nth-child(2){max-width: 96px; text-align: left;}                   
-                                &:nth-child(3){max-width: 96px; text-align: left;}    
+                                &:nth-child(2){max-width: 91px; text-align: center;}                   
+                                &:nth-child(3){max-width: 91px; text-align: center;}    
                                 &:nth-child(4),&:nth-child(5){
                                     display: none;
                                 }                           
                             }
     
                             .table_tr_item_kol { 
-                                width: 100%;
-                                text-align: left;
-                                &:nth-child(3){max-width: 96px; text-align: left;}  
-                                padding-left: 14px;
                                 &:nth-child(4){
                                     display: none;
                                 }   

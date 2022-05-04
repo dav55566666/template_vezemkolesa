@@ -584,7 +584,7 @@
                 max-width: 525px;
                 width: 100%;
 				img { 
-                    width: 100%;
+
 				}
 			}
 		}
@@ -694,75 +694,193 @@
         }
     }
     .search_result { 
+        width: 100%;
         padding: 20px;
+        padding-right: 324px;
         .search_result_cont { 
+            max-width: 1800px;
+            width: 100%;
+            margin: 0 auto;
             h2{
+                font-family: 'Open Sans Condensed';
+                font-style: normal;
+                font-weight: 700;
                 font-size: 32px;
+                line-height: 100%;
+                color: #444444;
                 margin-bottom: 40px;
             }
             .search_result_swiper{
-                display: block;
-                margin-bottom: 20px;
-                .swiper-slide{
+                display: none;
+                ul{
                     max-width: 250px;
+                    
+                }
+            }
+            ul { 
+                li { 
+                    h4 { 
+                        font-family: 'Open Sans Condensed';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 120%;
+                        margin-bottom: 16px;
+                        color: #444444;                        
+                    }
+                    a{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: #444444;  
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        span{
+                            text-decoration-line: underline;
+                            color: #1E9CDB;              
+                            margin-left: 3px;              
+                        }                      
+                    }
+                    &:last-child{
+                        a{
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
             .search_result_grid { 
-                display: none;
+                max-width: 1442px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 48px;
+                margin-bottom: 20px;
                 
             }
             .showall { 
+                font-family: 'Open Sans Condensed';
+                font-style: normal;
+                font-weight: 700;
                 font-size: 18px;
+                line-height: 120%;
+                color: #1E9CDB;
             }
         }
     }
     .help_select { 
+        width: 100%;
         padding: 40px 20px 60px;
         .help_select_cont { 
+            max-width: 1800px;
+            width: 100%;
+            margin: 0 auto;
             .help_select_box { 
-                padding: 40px 30px;
+                max-width: 1442px;
+                width: 100%;
+                background: #F9F9F9;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+                border-radius: 6px;
+                display: flex;
+                padding-left: 30px;
+                justify-content: space-between;
+                align-items: center;
                 .help_select_box_text { 
                     max-width: 465px;
+                    width: 100%;
                     h2 { 
+                        font-family: 'Open Sans Condensed';
+                        font-style: normal;
+                        font-weight: 700;
                         font-size: 32px;
+                        line-height: 100%;
+                        color: #444444;
                     }
                     p { 
+                        font-family: 'Open Sans Condensed';
+                        font-style: normal;
+                        font-weight: 700;
                         font-size: 18px;
+                        line-height: 120%;
+                        color: #444444;
                     }
                     form { 
-                        margin: 16px 0 22px;
-                        flex-direction: column;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
                         gap: 10px;
-                        justify-content: flex-start;
-                        align-items: flex-start;
+                        margin: 16px 0 22px;
                         .inptext { 
                             max-width: 228px;
+                            width: 100%;
+                            display: block;
                             #phoneinput { 
+                                background: #FFFFFF;
+                                border: 1px solid #DBE2E9;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                width: 100%;
                                 height: 40px;
-                                font-size: 17px;                         
+                                padding: 0 10px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 140%;
+                                color: #444444;                            
                             }
                         }
                         .inpbtn { 
                             max-width: 228px;
+                            width: 100%;
                             #sendphoneinp { 
+                                width: 100%;
                                 height: 40px;
+                                background: #0E8ECF;
+                                border-radius: 4px;
+                                font-family: 'Open Sans Condensed';
+                                font-style: normal;
+                                font-weight: 700;
                                 font-size: 18px;
+                                line-height: 100%;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                border: unset;
+                                outline: none;
+                                cursor: pointer;
                             }
                         }
                     }
     
                     a { 
+                        font-family: 'Open Sans Condensed';
+                        font-style: normal;
+                        font-weight: 700;
                         font-size: 18px;
+                        line-height: 120%;
+                        color: #444444;
+                        span { 
+                            color: #1E9CDB;
+                            margin-left: 3px;
+                        }
                     }
                 }
                 .help_select_box_img { 
-                    display: none;
+                    max-width: 525px;
+                    width: 100%;
+                    img { 
+    
+                    }
                 }
             }
         }
     }
 }
-@media(max-width: 768px){
+@media(max-width: 600px){
     .filter { 
         padding: 20px;
         .filter_cont { 
